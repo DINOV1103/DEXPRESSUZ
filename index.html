@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="uz-Cyrl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>А-9 Андробосс — озуқавий қўшимча ҳақида маълумот</title>
+<meta name="description" content="А-9 Андробосс — эркаклар учун озуқавий қўшимча (БАД). Дори восита эмас. Таркибни қандай билиш, қабул қилиш тартиби, эҳтиёт чоралари ва саволларга жавоблар.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#0d4a46; --pine-deep:#083330; --ink:#152624; --soft:#556866;
+  --paper:#f1f5f4; --card:#fff; --line:#d3e0dd;
+  --amber:#d98e04; --amber-hi:#b87700; --sand:#efe6d3; --rose:#8d2f28;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Golos Text",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);background:var(--paper);font-size:17px;line-height:1.62}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+a{color:var(--pine)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:3px}
+img,svg{max-width:100%;height:auto;display:block}
+
+.hero{background:var(--pine);color:#fff;padding:34px 0 46px}
+.hero-in{display:grid;gap:26px;align-items:center}
+.eyebrow{font-size:14px;font-weight:500;color:#a8ccc8;margin:0 0 12px}
+h1{font-size:clamp(29px,6.4vw,48px);line-height:1.12;margin:0 0 14px;font-weight:700;letter-spacing:-.015em}
+.lead{font-size:18px;color:#d8e9e7;margin:0 0 24px;max-width:30em}
+.hero-note{margin-top:18px;font-size:14px;color:#9dc4c0;max-width:34em}
+.hero-art{justify-self:center;width:100%;max-width:330px}
+@media(min-width:780px){.hero-in{grid-template-columns:1.15fr .85fr}}
+
+.btn{display:inline-block;background:var(--amber);color:#1c1200;font-weight:700;font-size:18px;
+  padding:15px 30px;border:0;border-radius:9px;text-decoration:none;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--amber-hi);color:#fff}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);font-weight:600}
+.btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+
+section{padding:48px 0}
+.on-white{background:#fff}
+.on-sand{background:var(--sand)}
+h2{font-size:clamp(23px,4.4vw,31px);line-height:1.25;margin:0 0 8px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--soft);margin:0 0 26px;max-width:40em}
+h3{font-size:19px;margin:0 0 7px;font-weight:600}
+
+.grid{display:grid;gap:16px}
+@media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.on-white .card{background:var(--paper);border-color:#e2eae8}
+.card p{margin:0;color:var(--soft);font-size:16px}
+.card svg{margin-bottom:12px}
+
+ol.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:14px}
+ol.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:18px 20px 18px 62px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:18px;top:17px;width:30px;height:30px;
+  border-radius:50%;background:var(--pine);color:#fff;display:flex;align-items:center;
+  justify-content:center;font-weight:700;font-size:15px}
+ol.steps b{display:block;margin-bottom:3px}
+ol.steps span{color:var(--soft);font-size:16px}
+
+table.cmp{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+table.cmp th,table.cmp td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
+table.cmp th{background:var(--pine);color:#fff;font-weight:600;font-size:15px}
+table.cmp td:first-child{font-weight:600;width:38%}
+table.cmp tr:last-child td{border-bottom:0}
+
+ul.plain{margin:0;padding-left:22px;color:var(--soft)}
+ul.plain li{margin-bottom:9px}
+
+.notice{background:#fff8e6;border:1px solid #edd79b;border-left:5px solid var(--amber);
+  border-radius:10px;padding:18px 22px;color:#5a4400}
+.notice p{margin:0 0 8px}
+.notice p:last-child{margin:0}
+.notice b{color:#3d2e00}
+.alert{background:#fdeeec;border:1px solid #edc2bd;border-left:5px solid var(--rose);
+  border-radius:10px;padding:18px 22px;color:#5e231d}
+.alert p{margin:0 0 8px}
+.alert p:last-child{margin:0}
+.alert b{color:var(--rose)}
+
+details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+details summary{padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:22px;line-height:1;color:var(--pine);flex:0 0 auto}
+details[open] summary::after{content:"–"}
+details .body{padding:0 20px 18px;color:var(--soft);font-size:16px}
+
+form{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;max-width:580px}
+label{display:block;font-weight:600;margin:0 0 6px;font-size:15px}
+.field{margin-bottom:16px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px;
+  border:1px solid #a8bcb9;border-radius:9px;background:#fff;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+input:hover,select:hover,textarea:hover{border-color:var(--pine)}
+.check{display:flex;gap:11px;align-items:flex-start;font-size:14.5px;color:var(--soft);margin-bottom:20px;cursor:pointer}
+.check input{width:21px;height:21px;margin-top:3px;flex:0 0 auto}
+form .btn{width:100%}
+#msg{margin-top:15px;font-weight:600;display:none;padding:12px 14px;border-radius:9px;
+  background:#e6f1ef;color:var(--pine-deep)}
+#msg.err{background:#fdeceb;color:#96241c}
+
+.strip{display:grid;gap:18px}
+@media(min-width:720px){.strip{grid-template-columns:repeat(3,1fr)}}
+.strip>div{display:flex;gap:13px;align-items:flex-start}
+.strip b{display:block;font-size:16px;margin-bottom:2px}
+.strip p{margin:0;font-size:15px;color:var(--soft)}
+.strip svg{flex:0 0 auto}
+
+.split{display:grid;gap:26px;align-items:center}
+@media(min-width:820px){.split{grid-template-columns:1fr 1fr}}
+
+footer{background:var(--pine-deep);color:#bcd6d3;padding:36px 0 56px;font-size:15px}
+footer h3{color:#fff;font-size:16px;margin:0 0 10px}
+footer a{color:#e8c887}
+footer p{margin:0 0 9px}
+.foot-grid{display:grid;gap:26px}
+@media(min-width:720px){.foot-grid{grid-template-columns:1.3fr 1fr}}
+.fineprint{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:14px;color:#8fb0ad}
+
+@media(prefers-reduced-motion:no-preference){
+  .hero-art{animation:rise .7s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="eyebrow">Озуқавий қўшимча · маълумот саҳифаси</p>
+      <h1>А-9 Андробосс</h1>
+      <p class="lead">Эркаклар учун ўсимлик компонентлари асосидаги озуқавий қўшимча (БАД), таблетка шаклида. Бу саҳифада маҳсулот ҳақида, уни қандай қабул қилиш ва нимага эътибор бериш кераклиги ҳақида маълумот берилган.</p>
+      <a class="btn" href="#murojaat">Мурожаат қолдириш</a>
+      <a class="btn btn-ghost" href="https://t.me/androbossA9" rel="noopener" style="margin-left:8px">Telegram'да савол бериш</a>
+      <p class="hero-note">А-9 Андробосс дори восита эмас. У касалликни даволамайди ва шифокор тайинлаган даволашнинг ўрнини босмайди. Натижа кафолатланмайди ва ҳар кимда турлича бўлади.</p>
+    </div>
+
+    <svg class="hero-art" viewBox="0 0 320 300" role="img" aria-label="А-9 Андробосс қадоғи ва таблеткалар блистери">
+      <ellipse cx="160" cy="268" rx="118" ry="17" fill="#000" opacity=".18"/>
+      <path d="M92 66 L160 40 L160 240 L92 262 Z" fill="#0a3b38"/>
+      <path d="M160 40 L246 66 L246 240 L160 262 Z" fill="#11605b"/>
+      <path d="M92 66 L160 40 L246 66 L160 92 Z" fill="#17756f"/>
+      <path d="M160 118 L246 144 L246 176 L160 150 Z" fill="#f4f1e6"/>
+      <path d="M92 144 L160 118 L160 150 L92 176 Z" fill="#e2ded1"/>
+      <text x="203" y="161" fill="#0d4a46" font-family="Golos Text,Arial" font-size="27" font-weight="700" text-anchor="middle" transform="rotate(16 203 161)">А-9</text>
+      <text x="126" y="168" fill="#5d6b64" font-family="Golos Text,Arial" font-size="10" font-weight="600" text-anchor="middle" transform="rotate(-20 126 168)">БАД</text>
+      <path d="M160 196 L246 222 L246 230 L160 204 Z" fill="#d98e04"/>
+      <g transform="translate(182 198) rotate(-8)">
+        <rect x="0" y="0" width="118" height="62" rx="9" fill="#dfe7e5" stroke="#b6c6c3" stroke-width="2"/>
+        <g fill="#f4f1e6" stroke="#b6c6c3" stroke-width="1.5">
+          <ellipse cx="24" cy="21" rx="12" ry="9"/><ellipse cx="59" cy="21" rx="12" ry="9"/><ellipse cx="94" cy="21" rx="12" ry="9"/>
+          <ellipse cx="24" cy="43" rx="12" ry="9"/><ellipse cx="59" cy="43" rx="12" ry="9"/><ellipse cx="94" cy="43" rx="12" ry="9"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<!-- ================= STRIP ================= -->
+<section class="on-white" style="padding:30px 0">
+  <div class="wrap strip">
+    <div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><path d="M12 21c-4.5-2-7-5.5-7-9.5C5 7 8 4 12 3c4 1 7 4 7 8.5 0 4-2.5 7.5-7 9.5z"/><path d="M12 21V8"/><path d="M12 12l3.2-2.6M12 15.5l-3.2-2.6"/></svg>
+      <div><b>Ўсимлик асосида</b><p>Ўсимлик экстрактлари асосидаги қўшимча. Тўлиқ таркиб қадоқда.</p></div>
+    </div>
+    <div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.5v7"/></svg>
+      <div><b>Таблетка шаклида</b><p>Ўлчаш ёки аралаштириш талаб қилинмайди.</p></div>
+    </div>
+    <div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.4"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M8.5 13.5h7"/></svg>
+      <div><b>Курс билан</b><p>Бир марталик эмас — курс давомида қабул қилинади.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAD vs DORI ================= -->
+<section>
+  <div class="wrap">
+    <h2>БАД нима ва у доридан нимаси билан фарқ қилади</h2>
+    <p class="sub">Бу энг кўп чалкашадиган жой. Озуқавий қўшимча ва дори восита — икки хил нарса, уларга қўйиладиган талаблар ҳам бошқа-бошқа.</p>
+
+    <table class="cmp">
+      <thead>
+        <tr><th>Мезон</th><th>Озуқавий қўшимча (БАД)</th><th>Дори восита</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Вазифаси</td><td>Овқатланишни тўлдириш, умумий ҳолатни қўллаб-қувватлаш</td><td>Аниқ касалликни даволаш ёки олдини олиш</td></tr>
+        <tr><td>Касалликни даволайдими</td><td>Йўқ</td><td>Ҳа, тасдиқланган кўрсатмалар бўйича</td></tr>
+        <tr><td>Клиник синовлар</td><td>Дори даражасида талаб қилинмайди</td><td>Кўп босқичли клиник синовдан ўтади</td></tr>
+        <tr><td>Самара кафолати</td><td>Кафолатланмайди, ҳар кимда турлича</td><td>Кўрсатмалар доирасида исботланган</td></tr>
+        <tr><td>Шифокор рецепти</td><td>Талаб қилинмайди</td><td>Кўп ҳолларда талаб қилинади</td></tr>
+        <tr><td>Даволаш ўрнини босадими</td><td>Йўқ</td><td>Ўзи даволаш воситаси</td></tr>
+      </tbody>
+    </table>
+
+    <div class="notice" style="margin-top:22px">
+      <p><b>Хулоса:</b> «БАД ичдим, дорини ташладим» — хавфли қарор. Шифокор тайинлаган дорини фақат ўша шифокор бекор қилиши мумкин.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TARKIBNI QANDAY BILISH ================= -->
+<section class="on-white">
+  <div class="wrap">
+    <h2>Таркибни қандай билиш мумкин</h2>
+    <p class="sub">Ичадиган ҳар қандай маҳсулотнинг таркибини билиш — сизнинг ҳақингиз. Уни аниқлашнинг учта ишончли йўли бор.</p>
+
+    <div class="split">
+      <div>
+        <ol class="steps">
+          <li><b>Қадоқдаги ёзувни ўқинг</b><span>Таркиб, миқдор, яроқлилик муддати ва сақлаш шароити қадоқда бўлиши шарт. Ёзуви йўқ ёки ўчирилган маҳсулотни олманг.</span></li>
+          <li><b>Операторимиздан сўранг</b><span>Мурожаат қолдирсангиз ёки Telegram орқали ёзсангиз, таркиб рўйхатини ва мавжуд ҳужжатларни юборамиз.</span></li>
+          <li><b>Шифокорингизга кўрсатинг</b><span>Доимий дори ичсангиз, қадоқни ёки таркиб рўйхатини шифокорга кўрсатинг — у мослигини баҳолайди.</span></li>
+        </ol>
+      </div>
+
+      <!-- QADOQ YORLIG'I: nimaga e'tibor berish -->
+      <svg viewBox="0 0 340 300" role="img" aria-label="Қадоқ ёрлиғида текшириш керак бўлган жойлар">
+        <rect x="18" y="14" width="196" height="272" rx="10" fill="#f6f8f7" stroke="#0d4a46" stroke-width="2.5"/>
+        <rect x="18" y="14" width="196" height="46" rx="10" fill="#0d4a46"/>
+        <rect x="18" y="50" width="196" height="10" fill="#0d4a46"/>
+        <text x="116" y="44" fill="#fff" font-family="Golos Text,Arial" font-size="19" font-weight="700" text-anchor="middle">А-9</text>
+
+        <text x="34" y="86" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Таркиби</text>
+        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round">
+          <path d="M34 98h150"/><path d="M34 110h150"/><path d="M34 122h116"/>
+        </g>
+
+        <text x="34" y="150" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Яроқлилик муддати</text>
+        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 162h96"/></g>
+
+        <text x="34" y="190" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Сақлаш шароити</text>
+        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 202h132"/></g>
+
+        <text x="34" y="230" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Ишлаб чиқарувчи</text>
+        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 242h110"/><path d="M34 254h78"/></g>
+
+        <rect x="34" y="266" width="44" height="12" rx="2" fill="#d98e04"/>
+
+        <g stroke="#d98e04" stroke-width="2" fill="none">
+          <path d="M214 104h44"/><path d="M214 160h44"/><path d="M214 200h44"/><path d="M214 246h44"/>
+        </g>
+        <g fill="#0d4a46" font-family="Golos Text,Arial" font-size="12" font-weight="600">
+          <text x="264" y="108">текширинг</text>
+          <text x="264" y="164">текширинг</text>
+          <text x="264" y="204">текширинг</text>
+          <text x="264" y="250">текширинг</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QABUL QILISH ================= -->
+<section>
+  <div class="wrap">
+    <h2>Қўшимчани хавфсиз қабул қилиш қоидалари</h2>
+    <p class="sub">Қуйидагилар озуқавий қўшимчаларга умумий тегишли қоидалар. Аниқ доза ва курс муддати ҳар доим қадоқдаги йўриқномада кўрсатилади — асосий манба ўша.</p>
+    <ol class="steps">
+      <li><b>Йўриқномада ёзилган дозадан ошманг</b><span>«Кўпроқ ичсам, тезроқ таъсир қилади» — нотўғри фикр. Ортиқча доза фойда бермайди, аксинча зарар етказиши мумкин.</span></li>
+      <li><b>Бир стакан оддий сув билан ичинг</b><span>Чой, кофе, энергетик ёки газли ичимлик билан эмас — улар сўрилишга таъсир қилиши мумкин.</span></li>
+      <li><b>Ҳар куни бир хил вақтда</b><span>Эрталаб ва кечқурун каби барқарор режим курсни бир маромда сақлайди.</span></li>
+      <li><b>Бир вақтда бир нечта қўшимча ичманг</b><span>Турли БАДларда бир хил компонент такрорланиши ва миқдор ортиб кетиши мумкин.</span></li>
+      <li><b>Дори билан бирга ичишни шифокор билан келишинг</b><span>Баъзи ўсимлик компонентлари дориларнинг таъсирини кучайтириши ёки сусайтириши мумкин.</span></li>
+      <li><b>Ножўя ҳолатда дарҳол тўхтатинг</b><span>Тошма, қичишиш, кўнгил айниши, бош оғриғи ёки бошқа нохуш ҳолат сезсангиз — қабулни тўхтатиб, шифокорга мурожаат қилинг.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= KIMLARGA TAVSIYA ETILMAYDI ================= -->
+<section class="on-sand">
+  <div class="wrap">
+    <h2>Кимларга тавсия этилмайди</h2>
+    <p class="sub">Қуйидагилардан бирортаси сизга тегишли бўлса, қўшимчани ўз ихтиёрингиз билан бошламанг — аввал шифокор билан маслаҳатлашинг.</p>
+    <div class="grid two">
+      <div>
+        <ul class="plain">
+          <li>18 ёшга тўлмаганлар</li>
+          <li>Таркибий қисмларга аллергияси ёки сезгирлиги борлар</li>
+          <li>Юрак-қон томир касаллиги бўйича доимий дори ичаётганлар</li>
+          <li>Қон босимини туширувчи ёки қон суюлтирувчи дори қабул қилаётганлар</li>
+          <li>Қандли диабет бўйича даво олаётганлар</li>
+          <li>Жигар ёки буйрак касаллиги борлар</li>
+          <li>Яқинда жарроҳлик амалиёти ўтказганлар ёки режалаштирганлар</li>
+          <li>Аниқланмаган доимий оғриқ ёки шикояти борлар</li>
+        </ul>
+      </div>
+      <div class="notice">
+        <p><b>Нима учун бу муҳим.</b> «Табиий» деган сўз «ҳар кимга хавфсиз» дегани эмас. Ўсимлик экстрактлари ҳам организмга таъсир қилади — шунинг учун улар дорилар билан ўзаро таъсирга киришиши мумкин.</p>
+        <p>Доимий равишда дори ичадиган одам учун қўшимча қўшиш — шифокор билан келишиладиган қарор, мустақил тажриба эмас.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QACHON SHIFOKORGA ================= -->
+<section class="on-white">
+  <div class="wrap">
+    <h2>Қачон қўшимча эмас, шифокор керак</h2>
+    <p class="sub">Баъзи белгилар текширувни талаб қилади. Уларни қўшимча билан «ёпиб» қўйиш вақтни йўқотишга олиб келади.</p>
+
+    <div class="alert" style="margin-bottom:22px">
+      <p><b>Дарҳол шифокорга мурожаат қилинг, агар:</b></p>
+      <p>кўкрак қафасида оғриқ ёки зўриқишда нафас етишмаслиги бўлса; пешобда қон кўринса; пешоб чиқиши қийинлашса ёки тўхтаб қолса; ҳарорат билан бирга оғриқ бўлса; моякларда шиш, оғриқ ёки қаттиқлик сезилса; сабабсиз тез вазн йўқотсангиз.</p>
+    </div>
+
+    <div class="grid three">
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M6 3v6a6 6 0 0012 0V3"/><path d="M4 3h4M16 3h4"/><circle cx="18" cy="16" r="3"/><path d="M12 15v-2"/></svg>
+        <h3>Текширув аниқлик беради</h3>
+        <p>Бир хил шикоятнинг ўнлаб сабаби бўлиши мумкин. Сабабни фақат кўрик ва таҳлил аниқлайди.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.2l3.4 2"/></svg>
+        <h3>Вақт муҳим</h3>
+        <p>Эрта аниқланган ҳолат кўпинча осонроқ ҳал бўлади. Кечиктириш имкониятни камайтиради.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M4 19V6.5A2.5 2.5 0 016.5 4H19v15"/><path d="M6.5 19H19"/><path d="M9 8.5h7M9 12h5"/></svg>
+        <h3>Ёзиб боринг</h3>
+        <p>Шикоят қачон бошланганини, қандай дорилар ичишингизни ёзиб борсангиз, шифокорга ёрдам берасиз.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UMUMIY SALOMATLIK ================= -->
+<section>
+  <div class="wrap">
+    <h2>Эркаклар саломатлигига таъсир қиладиган омиллар</h2>
+    <p class="sub">Кундалик тонус ва умумий ҳолат кўп жиҳатдан турмуш тарзига боғлиқ. Ҳеч бир қўшимча бу омилларнинг ўрнини босолмайди.</p>
+
+    <div class="grid three">
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 019.5 3.5a8.5 8.5 0 1011 11z"/></svg>
+        <h3>Уйқу</h3>
+        <p>Кечаси 7–8 соат уйқу гормонал мувозанат ва кундузги энергия учун асос. Сурункали уйқусизлик биринчи навбатда тонусга уради.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M3.5 12h2M18.5 12h2"/><rect x="5.5" y="8.5" width="3.5" height="7" rx="1.2"/><rect x="15" y="8.5" width="3.5" height="7" rx="1.2"/><path d="M9 12h6"/></svg>
+        <h3>Ҳаракат</h3>
+        <p>Ҳафтасига 150 минут ўртача жисмоний фаоллик — юрак, қон айланиши ва умумий ҳолат учун фойдали.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M12 3.5c3 3.4 5.5 6.2 5.5 9.3a5.5 5.5 0 11-11 0c0-3.1 2.5-5.9 5.5-9.3z"/></svg>
+        <h3>Сув ва овқат</h3>
+        <p>Мунтазам овқатланиш, сабзавот ва оқсил етарли бўлиши, шакар ва ортиқча ёғни камайтириш умумий ҳолатни яхшилайди.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 15.5s1.5-1.5 4-1.5 4 1.5 4 1.5"/><path d="M9 9.5h.01M15 9.5h.01"/></svg>
+        <h3>Стресс</h3>
+        <p>Узоқ давом этган зўриқиш уйқуга, иштаҳага ва кайфиятга таъсир қилади. Дам олиш режими ҳам даво қисми.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M3.5 17h13a3 3 0 000-6h-13"/><path d="M18.5 11V8.5M21 17v-4"/><path d="M6 8.5c0-1.5 1.5-1.5 1.5-3M10 8.5c0-1.5 1.5-1.5 1.5-3"/></svg>
+        <h3>Тамаки ва алкоголь</h3>
+        <p>Чекиш қон томирларига, алкоголь эса уйқу ва гормонал фонга салбий таъсир қилади. Камайтириш аниқ фойда беради.</p>
+      </div>
+      <div class="card">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.4"/><path d="M3.5 9h17M8 2.5v4M16 2.5v4"/><path d="M9 13.5l2 2 3.5-3.8"/></svg>
+        <h3>Йиллик текширув</h3>
+        <p>Қон босими, қанд ва холестерин даражасини йилига бир марта текшириш кўп муаммони эрта аниқлайди.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTO'G'RI FIKRLAR ================= -->
+<section class="on-white">
+  <div class="wrap">
+    <h2>Кенг тарқалган нотўғри фикрлар</h2>
+    <p class="sub">Қўшимчалар ҳақида бозорда кўп ваъда айтилади. Қуйидагилар — эҳтиёт бўлиш керак бўлган жойлар.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>«Табиий — демак хавфсиз»</h3>
+        <p>Ўсимлик ҳам фаол модда. У аллергия чақириши ва дори билан ўзаро таъсирга киришиши мумкин. Табиийлик хавфсизлик кафолати эмас.</p>
+      </div>
+      <div class="card">
+        <h3>«Бир зумда таъсир қилади»</h3>
+        <p>Озуқавий қўшимчада дарҳол таъсир бўлмайди. Кимдир дарҳол натижа ваъда қилса, бу огоҳлантирувчи белги.</p>
+      </div>
+      <div class="card">
+        <h3>«99% натижа кафолатланади»</h3>
+        <p>Қўшимчада бундай кафолат бўлиши мумкин эмас. Аниқ фоиз айтилган ҳар қандай реклама текширилмаган рақам ишлатаётган бўлади.</p>
+      </div>
+      <div class="card">
+        <h3>«Дорини ташлаб, шуни ичсам бўлади»</h3>
+        <p>Йўқ. Шифокор тайинлаган давони фақат ўша шифокор ўзгартиради. Ўзбошимчалик билан тўхтатиш хавфли.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAQLASH ================= -->
+<section class="on-sand">
+  <div class="wrap">
+    <h2>Сақлаш ва эҳтиёт чоралари</h2>
+    <div class="grid three">
+      <div class="card" style="background:#fff;border-color:#ddd0b4">
+        <h3>Ҳарорат</h3>
+        <p>Қуруқ, салқин жойда, +25°C дан юқори бўлмаган ҳароратда. Тўғридан-тўғри қуёш нуридан ва намликдан узоқда.</p>
+      </div>
+      <div class="card" style="background:#fff;border-color:#ddd0b4">
+        <h3>Болалар</h3>
+        <p>Болалар қўли етмайдиган жойда сақланг. Қўшимча болалар учун мўлжалланмаган.</p>
+      </div>
+      <div class="card" style="background:#fff;border-color:#ddd0b4">
+        <h3>Муддат</h3>
+        <p>Яроқлилик муддати қадоқда кўрсатилган. Муддати ўтган ёки қадоғи шикастланган маҳсулотни ишлатманг.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap">
+    <h2>Саволлар ва жавоблар</h2>
+    <p class="sub">Жавоб топмасангиз, мурожаат қолдиринг ёки Telegram орқали ёзинг.</p>
+
+    <details><summary>А-9 Андробосс дорими?</summary><div class="body">Йўқ. Бу озуқавий қўшимча (БАД). У касалликни даволамайди, диагноз қўймайди ва шифокор тайинлаган даволашнинг ўрнини босмайди.</div></details>
+
+    <details><summary>Таркибини қаердан биламан?</summary><div class="body">Тўлиқ таркиб маҳсулот қадоғида ёзилган. Бундан ташқари, мурожаат қолдирсангиз ёки Telegram орқали ёзсангиз, таркиб рўйхатини юборамиз.</div></details>
+
+    <details><summary>Шифокор билан маслаҳатлашиш шартми?</summary><div class="body">Сурункали касаллигингиз бўлса, ҳар куни дори ичсангиз ёки 45 ёшдан ошган бўлсангиз — ҳа, тавсия этилади. Шикоятнинг сабабини фақат текширув аниқлайди.</div></details>
+
+    <details><summary>Натижа қачон сезилади?</summary><div class="body">Қўшимчада натижа кафолатланмайди ва ҳар кимда турлича бўлади. Кимдадир сезиларли ўзгариш бўлмаслиги ҳам мумкин. Биз аниқ муддат ёки фоиз ваъда қилмаймиз.</div></details>
+
+    <details><summary>Ножўя таъсири бўладими?</summary><div class="body">Таркибий қисмларга индивидуал сезгирлик бўлиши мумкин. Тошма, қичишиш, кўнгил айниши ёки бошқа нохуш ҳолат сезсангиз, қабулни тўхтатинг ва шифокорга мурожаат қилинг.</div></details>
+
+    <details><summary>Бошқа дори билан бирга ичса бўладими?</summary><div class="body">Буни ўзингиз ҳал қилманг. Қадоқни ёки таркиб рўйхатини шифокорингизга кўрсатинг — айниқса юрак, қон босими, диабет ёки қон суюлтирувчи дори ичаётган бўлсангиз.</div></details>
+
+    <details><summary>Дозани оширсам, таъсири кучаядими?</summary><div class="body">Йўқ. Йўриқномадаги доза — чегара, тавсия эмас. Ортиқча доза фойда бермайди ва зарар етказиши мумкин.</div></details>
+
+    <details><summary>Бошқа қўшимчалар билан бирга ичса бўладими?</summary><div class="body">Бир вақтда бир нечта БАД ичиш тавсия этилмайди — уларда бир хил компонентлар такрорланиб, миқдор ортиб кетиши мумкин.</div></details>
+
+    <details><summary>Курсни тўхтатиб, кейин давом эттирса бўладими?</summary><div class="body">Курс тартиби қадоқдаги йўриқномада кўрсатилган. Аниқ жавоб учун операторимиздан сўранг ёки шифокор билан маслаҳатлашинг.</div></details>
+
+    <details><summary>Мурожаат қолдирсам, нима бўлади?</summary><div class="body">Операторимиз сиз билан боғланиб, саволларингизга жавоб беради ва маҳсулот ҳақида маълумот юборади. Мажбурият юкланмайди.</div></details>
+  </div>
+</section>
+
+<!-- ================= MUROJAAT ================= -->
+<section class="on-white" id="murojaat">
+  <div class="wrap">
+    <h2>Мурожаат қолдириш</h2>
+    <p class="sub">Саволингизни ёзинг — операторимиз боғланиб, маҳсулот, таркиб ва қабул қилиш тартиби бўйича маълумот беради. Ҳеч қандай мажбурият йўқ.</p>
+
+    <form id="askForm" novalidate>
+      <div class="field">
+        <label for="name">Исмингиз</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="phone">Телефон рақамингиз</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 __ ___ __ __" required>
+      </div>
+      <div class="field">
+        <label for="region">Ҳудуд</label>
+        <select id="region" name="region" required>
+          <option value="">Танланг</option>
+          <option>Тошкент шаҳри</option><option>Тошкент вилояти</option>
+          <option>Андижон вилояти</option><option>Бухоро вилояти</option>
+          <option>Жиззах вилояти</option><option>Қашқадарё вилояти</option>
+          <option>Навоий вилояти</option><option>Наманган вилояти</option>
+          <option>Самарқанд вилояти</option><option>Сирдарё вилояти</option>
+          <option>Сурхондарё вилояти</option><option>Фарғона вилояти</option>
+          <option>Хоразм вилояти</option><option>Қорақалпоғистон Республикаси</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="question">Саволингиз</label>
+        <textarea id="question" name="question" placeholder="Масалан: таркиби ҳақида маълумот керак"></textarea>
+      </div>
+      <label class="check" for="agree">
+        <input id="agree" type="checkbox" required>
+        <span>Шахсий маълумотларим мурожаатга жавоб бериш учун қайта ишланишига розиман. Маҳсулот дори восита эмаслигини тушундим.</span>
+      </label>
+      <button class="btn" type="submit">Мурожаат юбориш</button>
+      <div id="msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>А-9 Андробосс</h3>
+        <p>Озуқавий қўшимча (БАД). Дори восита эмас, касалликни даволамайди ва шифокор тайинлаган даволашнинг ўрнини босмайди. Натижа кафолатланмайди.</p>
+        <p>Маҳсулотнинг тўлиқ таркиби, ишлаб чиқарувчиси ва яроқлилик муддати қадоқда кўрсатилган.</p>
+      </div>
+      <div>
+        <h3>Боғланиш</h3>
+        <p><a href="https://t.me/androbossA9" rel="noopener">Telegram орқали ёзиш</a></p>
+        <p><a href="#murojaat">Мурожаат қолдириш</a></p>
+        <p><a href="#">Юқорига қайтиш</a></p>
+      </div>
+    </div>
+    <p class="fineprint">Ушбу саҳифадаги маълумот танишиш учун берилган ва тиббий маслаҳат ўрнини босмайди. Қўшимчани қабул қилишдан олдин шифокор билан маслаҳатлашинг. Индивидуал сезгирлик бўлиши мумкин. 18 ёшгача тавсия этилмайди.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var TG = "https://t.me/androbossA9";
+  var form = document.getElementById("askForm");
+  var msg  = document.getElementById("msg");
+
+  function show(text, isErr) {
+    msg.style.display = "block";
+    msg.className = isErr ? "err" : "";
+    msg.textContent = text;
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        resolve();
+      } catch (err) { reject(err); }
+    });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var name     = form.name.value.trim();
+    var phone    = form.phone.value.trim();
+    var region   = form.region.value;
+    var question = form.question.value.trim();
+
+    if (!name)  { show("Исмингизни ёзинг.", true); form.name.focus(); return; }
+    if (phone.replace(/\D/g, "").length < 9) { show("Телефон рақамини тўлиқ киритинг.", true); form.phone.focus(); return; }
+    if (!region) { show("Ҳудудни танланг.", true); form.region.focus(); return; }
+    if (!form.agree.checked) { show("Давом этиш учун розиликни белгиланг.", true); return; }
+
+    var text =
+      "Мурожаат\n" +
+      "Исм: " + name + "\n" +
+      "Телефон: " + phone + "\n" +
+      "Ҳудуд: " + region +
+      (question ? "\nСавол: " + question : "");
+
+    var btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+    btn.textContent = "Юборилмоқда…";
+
+    copyText(text).then(function () {
+      show("Маълумотларингиз нусхаланди. Telegram очилади — чатга қўйиб юборинг.", false);
+    }).catch(function () {
+      show("Telegram очилади — исмингиз ва рақамингизни ёзиб юборинг.", false);
+    }).then(function () {
+      setTimeout(function () {
+        btn.disabled = false;
+        btn.textContent = "Мурожаат юбориш";
+        window.open(TG, "_blank", "noopener");
+      }, 1400);
+    });
+  });
+})();
+</script>
+</body>
+</html>
