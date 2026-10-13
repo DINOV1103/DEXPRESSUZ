@@ -2,492 +2,752 @@
 <html lang="uz-Cyrl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>А-9 Андробосс — озуқавий қўшимча ҳақида маълумот</title>
-<meta name="description" content="А-9 Андробосс — эркаклар учун озуқавий қўшимча (БАД). Дори восита эмас. Таркибни қандай билиш, қабул қилиш тартиби, эҳтиёт чоралари ва саволларга жавоблар.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d4a46" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a2b28" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<title>Кўз учун машқлар ва тавсиялар</title>
+<meta name="description" content="Экран олдида кўп ўтирадиганлар учун кўз чарчоғини енгиллаштирувчи машқлар, 20-20-20 таймери, иш жойини тўғри созлаш, болалар кўзи ва шифокорга қачон учраш кераклиги ҳақида тавсиялар.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --pine:#0d4a46; --pine-deep:#083330; --ink:#152624; --soft:#556866;
-  --paper:#f1f5f4; --card:#fff; --line:#d3e0dd;
-  --amber:#d98e04; --amber-hi:#b87700; --sand:#efe6d3; --rose:#8d2f28;
+  --hero-bg:#0d4a46; --brand:#0d4a46; --brand-ink:#0d4a46; --pine-soft:#e3efed;
+  --ink:#152624; --soft:#526563; --paper:#f1f5f4; --card:#fff; --line:#d3e0dd; --line-soft:#e2eae8;
+  --amber:#d98e04; --amber-hi:#c07c00; --amber-ink:#1c1200;
+  --sand:#efe6d3; --sand-line:#ddd0b4;
+  --hero-ink:#d8e9e7; --hero-mute:#a8ccc8;
+  --note-bg:#fff8e6; --note-line:#edd79b; --note-ink:#5a4400; --note-strong:#3d2e00;
+  --rose:#8d2f28; --rose-bg:#fdeeec; --rose-line:#edc2bd; --rose-ink:#5e231d;
+  --nav-bg:rgba(241,245,244,.92); --foot-bg:#083330;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --hero-bg:#0a2b28; --brand:#1f7a72; --brand-ink:#7ccfc4; --pine-soft:#1a2d2a;
+    --ink:#e3edeb; --soft:#9db1ae; --paper:#0e1716; --card:#15201e; --line:#26342f; --line-soft:#22302c;
+    --amber:#e09a12; --amber-hi:#f0ad2a; --amber-ink:#1c1200;
+    --sand:#1a1711; --sand-line:#3a3326;
+    --hero-ink:#cfe3e0; --hero-mute:#8fb8b3;
+    --note-bg:#271f0d; --note-line:#5b4718; --note-ink:#ecd59a; --note-strong:#ffe6a3;
+    --rose:#ff9e93; --rose-bg:#2a1412; --rose-line:#5a2823; --rose-ink:#f0c2bc;
+    --nav-bg:rgba(14,23,22,.92); --foot-bg:#071c1a;
+  }
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:"Golos Text",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  color:var(--ink);background:var(--paper);font-size:17px;line-height:1.62}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-a{color:var(--pine)}
-:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:3px}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:66px}
+html.lock,html.lock body{overflow:hidden}
+body{margin:0;font-family:"Golos Text",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);
+  background:var(--paper);font-size:16px;line-height:1.6;-webkit-tap-highlight-color:transparent}
+@media(min-width:720px){body{font-size:17px}}
+.wrap{max-width:1000px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left))}
+@media(min-width:720px){.wrap{padding:0 24px}}
+a{color:var(--brand-ink)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
 img,svg{max-width:100%;height:auto;display:block}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+button{font-family:inherit}
 
-.hero{background:var(--pine);color:#fff;padding:34px 0 46px}
-.hero-in{display:grid;gap:26px;align-items:center}
-.eyebrow{font-size:14px;font-weight:500;color:#a8ccc8;margin:0 0 12px}
-h1{font-size:clamp(29px,6.4vw,48px);line-height:1.12;margin:0 0 14px;font-weight:700;letter-spacing:-.015em}
-.lead{font-size:18px;color:#d8e9e7;margin:0 0 24px;max-width:30em}
-.hero-note{margin-top:18px;font-size:14px;color:#9dc4c0;max-width:34em}
-.hero-art{justify-self:center;width:100%;max-width:330px}
-@media(min-width:780px){.hero-in{grid-template-columns:1.15fr .85fr}}
+/* ---------- NAV ---------- */
+.nav{position:sticky;top:0;z-index:30;background:var(--nav-bg);-webkit-backdrop-filter:saturate(1.4) blur(10px);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{position:relative;display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
+  max-width:1000px;margin:0 auto;padding:9px max(16px,env(safe-area-inset-left))}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;scroll-snap-align:start;text-decoration:none;color:var(--soft);font-size:14.5px;font-weight:600;
+  padding:0 15px;min-height:40px;display:inline-flex;align-items:center;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);white-space:nowrap;touch-action:manipulation}
+.nav a.on{background:var(--brand);border-color:var(--brand);color:#fff}
 
-.btn{display:inline-block;background:var(--amber);color:#1c1200;font-weight:700;font-size:18px;
-  padding:15px 30px;border:0;border-radius:9px;text-decoration:none;cursor:pointer;font-family:inherit}
-.btn:hover{background:var(--amber-hi);color:#fff}
-.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);font-weight:600}
-.btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+/* ---------- HERO ---------- */
+.hero{background:var(--hero-bg);color:#fff;padding:24px 0 34px}
+.hero-in{display:grid;gap:18px;align-items:center}
+.hero-art{order:-1;justify-self:center;width:46%;max-width:190px}
+@media(min-width:780px){.hero{padding:44px 0 54px}.hero-in{grid-template-columns:1.2fr .8fr;gap:30px}.hero-art{order:0;width:100%;max-width:320px}}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;color:var(--hero-mute);background:rgba(255,255,255,.08);
+  padding:5px 12px;border-radius:999px;margin:0 0 14px}
+h1{font-size:clamp(31px,8.6vw,52px);line-height:1.08;margin:0 0 12px;font-weight:700;letter-spacing:-.02em}
+.lead{font-size:17px;color:var(--hero-ink);margin:0 0 22px;max-width:32em}
+.btns{display:grid;gap:10px}
+@media(min-width:520px){.btns{display:flex;flex-wrap:wrap}}
+.hero-note{margin:20px 0 0;font-size:14px;line-height:1.55;color:var(--hero-mute);max-width:36em;padding-left:12px;border-left:3px solid var(--amber)}
+@media(prefers-reduced-motion:no-preference){
+  .lid{transform-box:fill-box;transform-origin:center;animation:blink 6s infinite}
+  @keyframes blink{0%,91%,100%{transform:scaleY(1)}94%{transform:scaleY(.06)}}
+}
 
-section{padding:48px 0}
-.on-white{background:#fff}
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--amber);color:var(--amber-ink);
+  font-weight:700;font-size:17px;min-height:52px;padding:12px 24px;border:0;border-radius:13px;text-decoration:none;
+  cursor:pointer;touch-action:manipulation;transition:background .15s,transform .1s}
+.btn:hover{background:var(--amber-hi)}
+.btn:active{transform:translateY(1px)}
+.btn svg{flex:0 0 auto}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-line{background:transparent;color:var(--brand-ink);border:1.5px solid var(--line)}
+.btn-line:hover{background:var(--pine-soft)}
+.btn-sm{min-height:46px;font-size:16px;padding:10px 18px}
+.btn-block{width:100%}
+
+/* ---------- SECTIONS ---------- */
+section{padding:40px 0}
+@media(min-width:720px){section{padding:56px 0}}
+.on-white{background:var(--card)}
 .on-sand{background:var(--sand)}
-h2{font-size:clamp(23px,4.4vw,31px);line-height:1.25;margin:0 0 8px;font-weight:700;letter-spacing:-.01em}
-.sub{color:var(--soft);margin:0 0 26px;max-width:40em}
-h3{font-size:19px;margin:0 0 7px;font-weight:600}
+h2{font-size:clamp(24px,6.2vw,32px);line-height:1.2;margin:0 0 8px;font-weight:700;letter-spacing:-.015em}
+.sub{color:var(--soft);margin:0 0 22px;max-width:40em}
+h3{font-size:18px;margin:0 0 6px;font-weight:600;line-height:1.3}
+.ico{color:var(--brand-ink)}
 
-.grid{display:grid;gap:16px}
+.grid{display:grid;gap:12px}
+@media(min-width:560px){.grid.two-sm{grid-template-columns:1fr 1fr}}
 @media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
-.on-white .card{background:var(--paper);border-color:#e2eae8}
-.card p{margin:0;color:var(--soft);font-size:16px}
-.card svg{margin-bottom:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.on-white .card{background:var(--paper);border-color:var(--line-soft)}
+.on-sand .card{border-color:var(--sand-line)}
+.card p{margin:0;color:var(--soft);font-size:15.5px}
+.card .ico{margin-bottom:10px}
+.card ul{margin:0;padding-left:20px;color:var(--soft);font-size:15.5px}
+.card li{margin-bottom:6px}
 
-ol.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:14px}
-ol.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:12px;
-  padding:18px 20px 18px 62px;position:relative}
-ol.steps li::before{content:counter(s);position:absolute;left:18px;top:17px;width:30px;height:30px;
-  border-radius:50%;background:var(--pine);color:#fff;display:flex;align-items:center;
-  justify-content:center;font-weight:700;font-size:15px}
-ol.steps b{display:block;margin-bottom:3px}
-ol.steps span{color:var(--soft);font-size:16px}
-
-table.cmp{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-table.cmp th,table.cmp td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
-table.cmp th{background:var(--pine);color:#fff;font-weight:600;font-size:15px}
-table.cmp td:first-child{font-weight:600;width:38%}
-table.cmp tr:last-child td{border-bottom:0}
-
-ul.plain{margin:0;padding-left:22px;color:var(--soft)}
-ul.plain li{margin-bottom:9px}
-
-.notice{background:#fff8e6;border:1px solid #edd79b;border-left:5px solid var(--amber);
-  border-radius:10px;padding:18px 22px;color:#5a4400}
-.notice p{margin:0 0 8px}
-.notice p:last-child{margin:0}
-.notice b{color:#3d2e00}
-.alert{background:#fdeeec;border:1px solid #edc2bd;border-left:5px solid var(--rose);
-  border-radius:10px;padding:18px 22px;color:#5e231d}
-.alert p{margin:0 0 8px}
-.alert p:last-child{margin:0}
-.alert b{color:var(--rose)}
-
-details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
-details summary{padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;
-  display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
-details summary::-webkit-details-marker{display:none}
-details summary::after{content:"+";font-size:22px;line-height:1;color:var(--pine);flex:0 0 auto}
-details[open] summary::after{content:"–"}
-details .body{padding:0 20px 18px;color:var(--soft);font-size:16px}
-
-form{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;max-width:580px}
-label{display:block;font-weight:600;margin:0 0 6px;font-size:15px}
-.field{margin-bottom:16px}
-input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px;
-  border:1px solid #a8bcb9;border-radius:9px;background:#fff;color:var(--ink)}
-textarea{min-height:100px;resize:vertical}
-input:hover,select:hover,textarea:hover{border-color:var(--pine)}
-.check{display:flex;gap:11px;align-items:flex-start;font-size:14.5px;color:var(--soft);margin-bottom:20px;cursor:pointer}
-.check input{width:21px;height:21px;margin-top:3px;flex:0 0 auto}
-form .btn{width:100%}
-#msg{margin-top:15px;font-weight:600;display:none;padding:12px 14px;border-radius:9px;
-  background:#e6f1ef;color:var(--pine-deep)}
-#msg.err{background:#fdeceb;color:#96241c}
-
-.strip{display:grid;gap:18px}
-@media(min-width:720px){.strip{grid-template-columns:repeat(3,1fr)}}
+/* strip */
+.strip{display:grid;gap:16px;padding:24px 0}
+@media(min-width:720px){.strip{grid-template-columns:repeat(3,1fr);padding:30px 0}}
 .strip>div{display:flex;gap:13px;align-items:flex-start}
 .strip b{display:block;font-size:16px;margin-bottom:2px}
 .strip p{margin:0;font-size:15px;color:var(--soft)}
-.strip svg{flex:0 0 auto}
+.strip svg{flex:0 0 auto;color:var(--brand-ink)}
 
-.split{display:grid;gap:26px;align-items:center}
-@media(min-width:820px){.split{grid-template-columns:1fr 1fr}}
+/* symptoms */
+.sym{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+@media(min-width:720px){.sym{grid-template-columns:repeat(3,1fr)}}
+.sym>div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px;display:flex;gap:10px;
+  align-items:center;font-weight:600;font-size:15px;line-height:1.3}
+.sym svg{flex:0 0 auto;color:var(--brand-ink)}
 
-footer{background:var(--pine-deep);color:#bcd6d3;padding:36px 0 56px;font-size:15px}
+/* notices */
+.notice{background:var(--note-bg);border:1px solid var(--note-line);border-left:5px solid var(--amber);border-radius:12px;
+  padding:16px 18px;color:var(--note-ink);font-size:15.5px}
+.notice p{margin:0 0 8px}.notice p:last-child{margin:0}
+.notice b{color:var(--note-strong)}
+.notice ul{margin:6px 0 0;padding-left:20px}
+.notice li{margin-bottom:5px}
+.alert{background:var(--rose-bg);border:1px solid var(--rose-line);border-left:5px solid var(--rose);border-radius:12px;
+  padding:16px 18px;color:var(--rose-ink);font-size:15.5px}
+.alert p{margin:0 0 8px}.alert p:last-child{margin:0}
+.alert b{color:var(--rose)}
+.alert ul{margin:4px 0 0;padding-left:20px}
+.alert li{margin-bottom:6px}
+
+/* ---------- EXERCISES ---------- */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:-6px 0 18px}
+.toggle{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 15px;border-radius:999px;
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:15px;font-weight:600;cursor:pointer}
+.toggle svg{color:var(--brand-ink)}
+.js-sound .i-off{display:none}
+.js-sound.off .i-on{display:none}
+.js-sound.off .i-off{display:inline-block}
+.js-sound.off{color:var(--soft)}
+
+.ex-all{display:flex;flex-direction:column;gap:16px;background:var(--hero-bg);color:#fff;border-radius:16px;padding:20px;margin-bottom:12px}
+@media(min-width:640px){.ex-all{flex-direction:row;align-items:center;justify-content:space-between;padding:22px 24px}}
+.ex-all h3{color:#fff;font-size:20px;margin-bottom:4px}
+.ex-all p{margin:0;color:var(--hero-ink);font-size:15.5px}
+.ex-all .dur{background:rgba(255,255,255,.12);color:#fff}
+
+.ex{background:var(--paper);border:1px solid var(--line-soft);border-radius:14px;padding:18px;display:flex;flex-direction:column}
+.ex-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.ex-num{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:15px}
+.dur{display:inline-block;font-size:13px;font-weight:600;color:var(--brand-ink);background:var(--pine-soft);
+  padding:2px 10px;border-radius:999px;margin-top:3px}
+.ex p{margin:0 0 10px;color:var(--soft);font-size:15.5px}
+.how{margin:0 0 14px}
+.how summary{cursor:pointer;font-weight:600;font-size:15px;color:var(--brand-ink);padding:6px 0;list-style:none;
+  display:inline-flex;align-items:center;gap:6px;min-height:40px}
+.how summary::-webkit-details-marker{display:none}
+.how summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(-45deg);transition:transform .2s;margin-right:2px}
+.how[open] summary::before{transform:rotate(45deg)}
+.how ol{margin:4px 0 0;padding-left:22px;color:var(--soft);font-size:15px}
+.how li{margin-bottom:5px}
+.ex .btn{margin-top:auto}
+
+/* ---------- TIMER ---------- */
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:24px}
+.rule>div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center}
+.rule b{display:block;font-size:clamp(20px,6vw,26px);color:var(--brand-ink);line-height:1.15}
+.rule span{font-size:13.5px;color:var(--soft);line-height:1.3;display:block;margin-top:2px}
+.timer{display:grid;gap:22px;align-items:center}
+@media(min-width:820px){.timer{grid-template-columns:auto 1fr;gap:40px}}
+.dial{position:relative;width:min(68vw,250px);height:min(68vw,250px);margin:0 auto}
+.dial svg{width:100%;height:100%;transform:rotate(-90deg)}
+.dial .track{fill:none;stroke:var(--line);stroke-width:10}
+.dial .prog{fill:none;stroke:var(--brand);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .3s linear,stroke .3s}
+.dial.brk .prog{stroke:var(--amber)}
+.dial-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.dial-t{font-size:clamp(40px,13vw,56px);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1}
+.dial-s{font-size:14px;color:var(--soft);margin-top:8px;max-width:11em;line-height:1.35}
+.dial.brk .dial-s{color:var(--ink);font-weight:600}
+.t-side .btns{margin-bottom:14px}
+.t-count{font-weight:600;margin:0 0 10px}
+.t-note{font-size:14.5px;color:var(--soft);margin:0}
+.btn.stop{background:var(--rose-bg);color:var(--rose);border:1.5px solid var(--rose-line)}
+#tGo .i-stop{display:none}
+#tGo.stop .i-stop{display:block}
+#tGo.stop .i-play{display:none}
+
+/* ---------- ERGONOMICS ---------- */
+.split{display:grid;gap:16px;align-items:start;margin-bottom:16px}
+.e-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.e-desk{fill:var(--line)}
+.e-chair{fill:none;stroke:var(--line);stroke-width:6;stroke-linecap:round}
+.e-fig{fill:none;stroke:var(--soft);stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.e-head{fill:var(--soft)}
+.e-eye{fill:var(--card)}
+.e-scr{fill:var(--brand)}
+.e-sight{fill:none;stroke:var(--amber);stroke-width:2.5;stroke-dasharray:6 6}
+.e-lvl{fill:none;stroke:var(--brand-ink);stroke-width:1.5;stroke-dasharray:3 5}
+.e-dim{fill:none;stroke:var(--ink);stroke-width:1.6}
+.e-txt{fill:var(--ink);font:600 13px "Golos Text",Arial,sans-serif}
+.e-amb{fill:var(--amber);font:600 12px "Golos Text",Arial,sans-serif}
+
+/* ---------- HABITS ---------- */
+.list{display:grid;gap:10px}
+@media(min-width:720px){.list{grid-template-columns:1fr 1fr}}
+.li{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line-soft);border-radius:14px;padding:15px}
+.li .bub{flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:var(--pine-soft);color:var(--brand-ink);
+  display:flex;align-items:center;justify-content:center}
+.li b{display:block;margin-bottom:2px}
+.li span{color:var(--soft);font-size:15.5px;display:block}
+
+/* ---------- FAQ ---------- */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{padding:15px 18px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;
+  gap:14px;align-items:flex-start;min-height:52px;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;line-height:1;color:var(--brand-ink);flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq .body{padding:0 18px 16px;color:var(--soft);font-size:15.5px}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--foot-bg);color:#bcd6d3;padding:34px 0 calc(40px + env(safe-area-inset-bottom));font-size:15px}
 footer h3{color:#fff;font-size:16px;margin:0 0 10px}
 footer a{color:#e8c887}
 footer p{margin:0 0 9px}
-.foot-grid{display:grid;gap:26px}
+.foot-grid{display:grid;gap:24px}
 @media(min-width:720px){.foot-grid{grid-template-columns:1.3fr 1fr}}
-.fineprint{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);
-  font-size:14px;color:#8fb0ad}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.fineprint{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#8fb0ad}
 
-@media(prefers-reduced-motion:no-preference){
-  .hero-art{animation:rise .7s ease-out both}
-  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-}
+/* ---------- PLAYER ---------- */
+.player{position:fixed;inset:0;z-index:60;display:none;flex-direction:column;background:var(--hero-bg);color:#fff;
+  padding:max(12px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+.player.open{display:flex}
+.p-top,.p-meta,.p-bar,.p-ctrl{max-width:560px;width:100%;margin-left:auto;margin-right:auto}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-title{flex:1;min-width:0}
+.p-title b{display:block;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-title small{display:block;color:var(--hero-mute);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ibtn{width:46px;height:46px;border-radius:13px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);
+  color:#fff;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;touch-action:manipulation}
+.ibtn:hover{background:rgba(255,255,255,.14)}
+.ibtn.off{color:var(--hero-mute)}
+.p-stage{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;padding:14px 0}
+.arena{position:relative;width:min(86vw,48vh,360px);height:min(86vw,48vh,360px);border-radius:26px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+.arena::before,.arena::after{content:"";position:absolute;background:rgba(255,255,255,.08)}
+.arena::before{left:50%;top:8%;bottom:8%;width:1px}
+.arena::after{top:50%;left:8%;right:8%;height:1px}
+.dot{position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--amber);
+  box-shadow:0 0 0 8px rgba(224,154,18,.22),0 0 26px rgba(224,154,18,.6);transition:left .55s ease-in-out,top .55s ease-in-out}
+.dot.free{transition:none}
+.pic{width:min(58vw,34vh,230px);height:min(58vw,34vh,230px)}
+.pic svg{width:100%;height:100%}
+.p-done{text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;max-width:420px;width:100%}
+.p-done .p-ctrl{margin-top:18px}
+.p-meta{display:flex;align-items:center;gap:16px}
+.p-ring{position:relative;width:78px;height:78px;flex:0 0 auto}
+.p-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.p-ring circle{fill:none;stroke-width:6}
+.p-ring .track{stroke:rgba(255,255,255,.15)}
+.p-ring .prog{stroke:var(--amber);stroke-linecap:round}
+.p-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:700;font-variant-numeric:tabular-nums}
+.p-text{font-size:clamp(19px,5.4vw,25px);font-weight:600;line-height:1.3;margin:0}
+.p-count{font-size:13.5px;color:var(--hero-mute);margin:4px 0 0}
+.p-bar{height:6px;border-radius:6px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:16px;margin-bottom:14px}
+.p-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:6px}
+.p-ctrl{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#pPause .i-play{display:none}
+#pPause.paused .i-play{display:inline-block}
+#pPause.paused .i-pause{display:none}
+
+/* ---------- FLOATING TIMER PILL ---------- */
+.pill{position:fixed;left:50%;bottom:max(14px,env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:9px;
+  background:#0b2e2b;color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:0 18px;min-height:48px;
+  font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;box-shadow:0 8px 28px rgba(0,0,0,.28);cursor:pointer;
+  transform:translate(-50%,160%);visibility:hidden;transition:transform .3s,visibility .3s,background .3s;white-space:nowrap}
+.pill svg{flex:0 0 auto;max-width:none}
+.pill.show{transform:translate(-50%,0);visibility:visible}
+.pill.brk{background:var(--amber);color:var(--amber-ink);border-color:transparent}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill,.dot,.dial .prog{transition:none}}
 </style>
 </head>
 <body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" aria-label="Бўлимлар">
+  <div class="nav-in">
+    <a href="#belgilar">Белгилар</a>
+    <a href="#mashqlar">Машқлар</a>
+    <a href="#taymer">20-20-20</a>
+    <a href="#ish-joyi">Иш жойи</a>
+    <a href="#odatlar">Одатлар</a>
+    <a href="#bolalar">Болалар</a>
+    <a href="#shifokor">Шифокорга</a>
+    <a href="#savollar">Саволлар</a>
+  </div>
+</nav>
 
 <!-- ================= HERO ================= -->
 <header class="hero">
   <div class="wrap hero-in">
     <div>
-      <p class="eyebrow">Озуқавий қўшимча · маълумот саҳифаси</p>
-      <h1>А-9 Андробосс</h1>
-      <p class="lead">Эркаклар учун ўсимлик компонентлари асосидаги озуқавий қўшимча (БАД), таблетка шаклида. Бу саҳифада маҳсулот ҳақида, уни қандай қабул қилиш ва нимага эътибор бериш кераклиги ҳақида маълумот берилган.</p>
-      <a class="btn" href="#murojaat">Мурожаат қолдириш</a>
-      <a class="btn btn-ghost" href="https://t.me/androbossA9" rel="noopener" style="margin-left:8px">Telegram'да савол бериш</a>
-      <p class="hero-note">А-9 Андробосс дори восита эмас. У касалликни даволамайди ва шифокор тайинлаган даволашнинг ўрнини босмайди. Натижа кафолатланмайди ва ҳар кимда турлича бўлади.</p>
+      <p class="eyebrow">Дори-дармонсиз · фақат машқ ва тавсиялар</p>
+      <h1>Кўзингизга дам беринг</h1>
+      <p class="lead">Экран олдида кўп ўтирадиганлар учун кўз чарчоғини енгиллаштирадиган оддий машқлар, 20-20-20 таймери ва иш жойини тўғри созлаш бўйича тавсиялар.</p>
+      <div class="btns">
+        <a class="btn" href="#mashqlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+          Машқларни бошлаш
+        </a>
+        <a class="btn btn-ghost" href="#taymer">20-20-20 таймер</a>
+      </div>
+      <p class="hero-note">Машқлар кўз чарчоғини камайтиришга ёрдам беради, лекин миопия ёки бошқа кўриш нуқсонларини тузатмайди ва кўзойнак, линза ёки шифокор кўригининг ўрнини босмайди.</p>
     </div>
 
-    <svg class="hero-art" viewBox="0 0 320 300" role="img" aria-label="А-9 Андробосс қадоғи ва таблеткалар блистери">
-      <ellipse cx="160" cy="268" rx="118" ry="17" fill="#000" opacity=".18"/>
-      <path d="M92 66 L160 40 L160 240 L92 262 Z" fill="#0a3b38"/>
-      <path d="M160 40 L246 66 L246 240 L160 262 Z" fill="#11605b"/>
-      <path d="M92 66 L160 40 L246 66 L160 92 Z" fill="#17756f"/>
-      <path d="M160 118 L246 144 L246 176 L160 150 Z" fill="#f4f1e6"/>
-      <path d="M92 144 L160 118 L160 150 L92 176 Z" fill="#e2ded1"/>
-      <text x="203" y="161" fill="#0d4a46" font-family="Golos Text,Arial" font-size="27" font-weight="700" text-anchor="middle" transform="rotate(16 203 161)">А-9</text>
-      <text x="126" y="168" fill="#5d6b64" font-family="Golos Text,Arial" font-size="10" font-weight="600" text-anchor="middle" transform="rotate(-20 126 168)">БАД</text>
-      <path d="M160 196 L246 222 L246 230 L160 204 Z" fill="#d98e04"/>
-      <g transform="translate(182 198) rotate(-8)">
-        <rect x="0" y="0" width="118" height="62" rx="9" fill="#dfe7e5" stroke="#b6c6c3" stroke-width="2"/>
-        <g fill="#f4f1e6" stroke="#b6c6c3" stroke-width="1.5">
-          <ellipse cx="24" cy="21" rx="12" ry="9"/><ellipse cx="59" cy="21" rx="12" ry="9"/><ellipse cx="94" cy="21" rx="12" ry="9"/>
-          <ellipse cx="24" cy="43" rx="12" ry="9"/><ellipse cx="59" cy="43" rx="12" ry="9"/><ellipse cx="94" cy="43" rx="12" ry="9"/>
-        </g>
+    <svg class="hero-art" viewBox="0 0 320 250" role="img" aria-label="Кўз ва таймер тасвири">
+      <circle cx="160" cy="125" r="104" fill="none" stroke="#1f6862" stroke-width="10"/>
+      <circle cx="160" cy="125" r="104" fill="none" stroke="#d98e04" stroke-width="10" stroke-linecap="round" stroke-dasharray="436 654" transform="rotate(-90 160 125)"/>
+      <g class="lid">
+        <path d="M68 125 Q160 48 252 125 Q160 202 68 125Z" fill="#f4f1e6"/>
+        <circle cx="160" cy="125" r="37" fill="#17756f"/>
+        <circle cx="160" cy="125" r="37" fill="none" stroke="#0a3b38" stroke-width="3"/>
+        <circle cx="160" cy="125" r="16" fill="#062624"/>
+        <circle cx="172" cy="113" r="7" fill="#fff" opacity=".92"/>
       </g>
+      <path d="M68 125 Q160 48 252 125 Q160 202 68 125Z" fill="none" stroke="#0a3b38" stroke-width="4"/>
     </svg>
   </div>
 </header>
 
 <!-- ================= STRIP ================= -->
-<section class="on-white" style="padding:30px 0">
+<div class="on-white">
   <div class="wrap strip">
     <div>
-      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><path d="M12 21c-4.5-2-7-5.5-7-9.5C5 7 8 4 12 3c4 1 7 4 7 8.5 0 4-2.5 7.5-7 9.5z"/><path d="M12 21V8"/><path d="M12 12l3.2-2.6M12 15.5l-3.2-2.6"/></svg>
-      <div><b>Ўсимлик асосида</b><p>Ўсимлик экстрактлари асосидаги қўшимча. Тўлиқ таркиб қадоқда.</p></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.2 2"/></svg>
+      <div><b>Ҳар 20 дақиқада</b><p>20 сония давомида 6 метрдан узоқроққа қаранг.</p></div>
     </div>
     <div>
-      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><path d="M12 8.5v7"/></svg>
-      <div><b>Таблетка шаклида</b><p>Ўлчаш ёки аралаштириш талаб қилинмайди.</p></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+      <div><b>Кўпроқ пирпиратинг</b><p>Экранга тикилганда кўз камроқ юмилади ва қурийди.</p></div>
     </div>
     <div>
-      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.4"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M8.5 13.5h7"/></svg>
-      <div><b>Курс билан</b><p>Бир марталик эмас — курс давомида қабул қилинади.</p></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.4"/><path d="M3 9h18M8 2.5v4M16 2.5v4M9 14l2 2 4-4"/></svg>
+      <div><b>Мунтазам кўрик</b><p>Шикоят бўлмаса ҳам, 1–2 йилда бир марта кўз шифокорига учранг.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= BELGILAR ================= -->
+<section id="belgilar">
+  <div class="wrap">
+    <h2>Кўз чарчоғи қандай билинади</h2>
+    <p class="sub">Экран, китоб ёки ҳужжатга узоқ тикилиб ишлагандан кейин кўпчиликда қуйидаги белгилар пайдо бўлади. Одатда улар дам олгандан кейин ўтиб кетади.</p>
+
+    <div class="sym">
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5c3 3.4 5.5 6.2 5.5 9.3a5.5 5.5 0 11-11 0c0-3.1 2.5-5.9 5.5-9.3z"/></svg>Қуриш, ачишиш</div>
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M5 10.5l2 1M19 10.5l-2 1"/></svg>Қизариш</div>
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="3"/></svg>Вақтинча хиралашиш</div>
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5 6 13h5l-1 8.5 7-11h-5z"/></svg>Бош оғриғи</div>
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>Ёруғликдан қамашиш</div>
+      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></svg>Бўйин, елка зўриқиши</div>
+    </div>
+
+    <div class="notice">
+      <p><b>Эътибор беринг:</b> дам олгандан кейин ҳам ўтмайдиган, кучайиб борадиган ёки фақат бир кўзда бўлаётган белгилар — кўз шифокорига учраш учун сабаб. Бунинг сабаби кўзойнак кераклиги ёки бошқа ҳолат бўлиши мумкин.</p>
     </div>
   </div>
 </section>
 
-<!-- ================= BAD vs DORI ================= -->
-<section>
+<!-- ================= MASHQLAR ================= -->
+<section class="on-white" id="mashqlar">
   <div class="wrap">
-    <h2>БАД нима ва у доридан нимаси билан фарқ қилади</h2>
-    <p class="sub">Бу энг кўп чалкашадиган жой. Озуқавий қўшимча ва дори восита — икки хил нарса, уларга қўйиладиган талаблар ҳам бошқа-бошқа.</p>
+    <h2>Кўз учун машқлар</h2>
+    <p class="sub">Ҳар бир машқ 1,5 дақиқадан ошмайди. «Бошлаш»ни босинг — экранда кўрсатма ва таймер чиқади. Кўз юмиладиган машқларда босқич алмашганда овозли сигнал эшитилади.</p>
 
-    <table class="cmp">
-      <thead>
-        <tr><th>Мезон</th><th>Озуқавий қўшимча (БАД)</th><th>Дори восита</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Вазифаси</td><td>Овқатланишни тўлдириш, умумий ҳолатни қўллаб-қувватлаш</td><td>Аниқ касалликни даволаш ёки олдини олиш</td></tr>
-        <tr><td>Касалликни даволайдими</td><td>Йўқ</td><td>Ҳа, тасдиқланган кўрсатмалар бўйича</td></tr>
-        <tr><td>Клиник синовлар</td><td>Дори даражасида талаб қилинмайди</td><td>Кўп босқичли клиник синовдан ўтади</td></tr>
-        <tr><td>Самара кафолати</td><td>Кафолатланмайди, ҳар кимда турлича</td><td>Кўрсатмалар доирасида исботланган</td></tr>
-        <tr><td>Шифокор рецепти</td><td>Талаб қилинмайди</td><td>Кўп ҳолларда талаб қилинади</td></tr>
-        <tr><td>Даволаш ўрнини босадими</td><td>Йўқ</td><td>Ўзи даволаш воситаси</td></tr>
-      </tbody>
-    </table>
+    <div class="toolbar">
+      <button class="toggle js-sound" type="button" aria-pressed="true">
+        <svg class="i-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 010 6M18 6.5a7.5 7.5 0 010 11"/></svg>
+        <svg class="i-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+        <span class="lbl">Овозли сигнал ёқилган</span>
+      </button>
+    </div>
 
-    <div class="notice" style="margin-top:22px">
-      <p><b>Хулоса:</b> «БАД ичдим, дорини ташладим» — хавфли қарор. Шифокор тайинлаган дорини фақат ўша шифокор бекор қилиши мумкин.</p>
+    <div class="ex-all">
+      <div>
+        <h3>Тўлиқ тўплам</h3>
+        <p>Тўртала машқ кетма-кет — иш куни ўртасида ёки кечқурун учун. <span class="dur" data-dur="all"></span></p>
+      </div>
+      <button class="btn" type="button" data-start="all">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+        Тўпламни бошлаш
+      </button>
+    </div>
+
+    <div class="grid two">
+      <article class="ex">
+        <div class="ex-head">
+          <span class="ex-num">1</span>
+          <div><h3>Пирпиратиш</h3><span class="dur" data-dur="blink"></span></div>
+        </div>
+        <p>Кўзни секин юмиб-очиш кўзни намлайди ва қуруқлик ҳиссини камайтиради. Экрандан кейин айниқса фойдали.</p>
+        <details class="how">
+          <summary>Қандай бажарилади</summary>
+          <ol>
+            <li>Елкаларни бўшаштиринг, экрандан кўзингизни узинг.</li>
+            <li>Кўзни секин ва тўлиқ юминг, 2 сония ушланг.</li>
+            <li>Секин очинг.</li>
+            <li>8 марта такрорланг.</li>
+          </ol>
+        </details>
+        <button class="btn btn-sm btn-block" type="button" data-start="blink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>Бошлаш
+        </button>
+      </article>
+
+      <article class="ex">
+        <div class="ex-head">
+          <span class="ex-num">2</span>
+          <div><h3>Кафт билан дам бериш</h3><span class="dur" data-dur="palm"></span></div>
+        </div>
+        <p>Кўз мушакларини бўшаштиради ва ёруғликдан қисқа дам беради.</p>
+        <details class="how">
+          <summary>Қандай бажарилади</summary>
+          <ol>
+            <li>Кафтларни бир-бирига ишқаб иситинг.</li>
+            <li>Кўзни юминг ва кафтларни кўз устига гумбаздек қўйинг — кўз олмасини босманг.</li>
+            <li>45 сония қоронғиликда секин нафас олинг.</li>
+            <li>Сигнал эшитилгач, кафтларни олиб, кўзни аста очинг.</li>
+          </ol>
+        </details>
+        <button class="btn btn-sm btn-block" type="button" data-start="palm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>Бошлаш
+        </button>
+      </article>
+
+      <article class="ex">
+        <div class="ex-head">
+          <span class="ex-num">3</span>
+          <div><h3>Яқин ва узоқ</h3><span class="dur" data-dur="focus"></span></div>
+        </div>
+        <p>Кўзнинг фокус мушакларини машқ қилдиради: яқиндан узоққа ва аксинча қараш.</p>
+        <details class="how">
+          <summary>Қандай бажарилади</summary>
+          <ol>
+            <li>Бош бармоқни юздан 25–30 см узоқликда ушланг.</li>
+            <li>10 сония бармоққа қаранг — у аниқ кўринсин.</li>
+            <li>10 сония 6 метрдан узоқдаги нарсага қаранг (дераза ортидаги дарахт, бино).</li>
+            <li>4 марта такрорланг.</li>
+          </ol>
+        </details>
+        <button class="btn btn-sm btn-block" type="button" data-start="focus">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>Бошлаш
+        </button>
+      </article>
+
+      <article class="ex">
+        <div class="ex-head">
+          <span class="ex-num">4</span>
+          <div><h3>Кўз ҳаракатлари</h3><span class="dur" data-dur="moves"></span></div>
+        </div>
+        <p>Бошни қимирлатмасдан, фақат кўз билан экрандаги ҳаракатланувчи нуқтани кузатасиз.</p>
+        <details class="how">
+          <summary>Қандай бажарилади</summary>
+          <ol>
+            <li>Юқорига ва пастга — 3 марта.</li>
+            <li>Чапга ва ўнгга — 3 марта.</li>
+            <li>Диагоналлар бўйлаб.</li>
+            <li>Соат мили бўйлаб ва тескари айлана.</li>
+            <li>Охирида 10 сония кўзни юмиб дам олинг.</li>
+          </ol>
+        </details>
+        <button class="btn btn-sm btn-block" type="button" data-start="moves">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>Бошлаш
+        </button>
+      </article>
+    </div>
+
+    <div class="notice" style="margin-top:16px">
+      <p><b>Хавфсизлик:</b> машқ пайтида оғриқ, бош айланиши ёки кўнгил айниши бўлса — тўхтатинг. Кўз операциясидан кейин, кўзда яллиғланиш ёки жароҳат бўлса, машқларни аввал шифокор билан келишинг.</p>
     </div>
   </div>
 </section>
 
-<!-- ================= TARKIBNI QANDAY BILISH ================= -->
-<section class="on-white">
+<!-- ================= 20-20-20 ================= -->
+<section id="taymer">
   <div class="wrap">
-    <h2>Таркибни қандай билиш мумкин</h2>
-    <p class="sub">Ичадиган ҳар қандай маҳсулотнинг таркибини билиш — сизнинг ҳақингиз. Уни аниқлашнинг учта ишончли йўли бор.</p>
+    <h2>20-20-20 қоидаси</h2>
+    <p class="sub">Экран олдида ишлаётганда ҳар 20 дақиқада 20 сония давомида 6 метр (20 фут) узоқликдаги нарсага қаранг. Бу кўзнинг яқинга қараш учун зўриқишини бўшаштиради.</p>
+
+    <div class="rule">
+      <div><b>20</b><span>дақиқа ишлагач</span></div>
+      <div><b>20</b><span>сония танаффус</span></div>
+      <div><b>6 м</b><span>узоқликка қаранг</span></div>
+    </div>
+
+    <div class="timer">
+      <div class="dial" id="dial">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><circle class="track" cx="100" cy="100" r="90"/><circle class="prog" id="dProg" cx="100" cy="100" r="90"/></svg>
+        <div class="dial-c" role="timer" aria-live="off">
+          <span class="dial-t" id="dTime">20:00</span>
+          <span class="dial-s" id="dState">Бошлаш тугмасини босинг</span>
+        </div>
+      </div>
+      <div class="t-side">
+        <div class="btns">
+          <button class="btn" type="button" id="tGo">
+            <svg class="i-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+            <svg class="i-stop" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2.5"/></svg>
+            <span class="lbl">Бошлаш</span>
+          </button>
+          <button class="btn btn-line" type="button" id="tNow">Ҳозир танаффус</button>
+        </div>
+        <p class="t-count" id="tCount" aria-live="polite"></p>
+        <p class="t-note">Таймер саҳифа очиқ турганда ишлайди. Телефон экрани ўчса, сигнал кечикиши мумкин — бундай ҳолда телефондаги оддий таймерни 20 дақиқага қўйинг.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ISH JOYI ================= -->
+<section class="on-white" id="ish-joyi">
+  <div class="wrap">
+    <h2>Иш жойини тўғри созлаш</h2>
+    <p class="sub">Кўз чарчоғининг катта қисми экраннинг масофаси, баландлиги ва ёруғликка боғлиқ. Буларни бир марта тўғри созлаш — ҳар куни фойда.</p>
 
     <div class="split">
-      <div>
-        <ol class="steps">
-          <li><b>Қадоқдаги ёзувни ўқинг</b><span>Таркиб, миқдор, яроқлилик муддати ва сақлаш шароити қадоқда бўлиши шарт. Ёзуви йўқ ёки ўчирилган маҳсулотни олманг.</span></li>
-          <li><b>Операторимиздан сўранг</b><span>Мурожаат қолдирсангиз ёки Telegram орқали ёзсангиз, таркиб рўйхатини ва мавжуд ҳужжатларни юборамиз.</span></li>
-          <li><b>Шифокорингизга кўрсатинг</b><span>Доимий дори ичсангиз, қадоқни ёки таркиб рўйхатини шифокорга кўрсатинг — у мослигини баҳолайди.</span></li>
-        </ol>
+      <div class="e-card">
+        <svg viewBox="0 0 340 230" role="img" aria-label="Экран кўздан 50–70 см узоқда, юқори чети кўз сатҳида">
+          <path class="e-dim" d="M92 30H296M92 22v16M296 22v16"/>
+          <text class="e-txt" x="194" y="18" text-anchor="middle">50–70 см</text>
+          <text class="e-txt" x="330" y="56" text-anchor="end">Юқори чети — кўз сатҳида</text>
+          <path class="e-lvl" d="M92 66H288"/>
+          <path class="e-sight" d="M92 70L288 96"/>
+          <text class="e-amb" x="196" y="110" text-anchor="middle">бироз пастга қараш</text>
+          <path class="e-chair" d="M44 104V172M44 168H112M78 168V210M58 210H98"/>
+          <circle class="e-head" cx="74" cy="68" r="20"/>
+          <circle class="e-eye" cx="88" cy="66" r="3"/>
+          <path class="e-fig" d="M70 92L66 160L132 162L134 210L152 210M70 108L104 138L156 136"/>
+          <rect class="e-desk" x="150" y="136" width="182" height="8" rx="3"/>
+          <rect class="e-desk" x="316" y="144" width="8" height="70" rx="2"/>
+          <rect class="e-scr" x="290" y="66" width="12" height="58" rx="3"/>
+          <path class="e-fig" d="M296 124V136M282 136H310" style="stroke:var(--brand)"/>
+        </svg>
       </div>
+      <div class="notice">
+        <p><b>Тез текшириш:</b> ўтириб, қўлингизни олдинга чўзинг. Бармоқ учлари экранга тегса ёки сал етмаса — масофа тўғри.</p>
+        <p>Экраннинг юқори чети кўз сатҳида бўлса, сиз бироз пастга қарайсиз — кўз камроқ очилади ва камроқ қурийди.</p>
+      </div>
+    </div>
 
-      <!-- QADOQ YORLIG'I: nimaga e'tibor berish -->
-      <svg viewBox="0 0 340 300" role="img" aria-label="Қадоқ ёрлиғида текшириш керак бўлган жойлар">
-        <rect x="18" y="14" width="196" height="272" rx="10" fill="#f6f8f7" stroke="#0d4a46" stroke-width="2.5"/>
-        <rect x="18" y="14" width="196" height="46" rx="10" fill="#0d4a46"/>
-        <rect x="18" y="50" width="196" height="10" fill="#0d4a46"/>
-        <text x="116" y="44" fill="#fff" font-family="Golos Text,Arial" font-size="19" font-weight="700" text-anchor="middle">А-9</text>
-
-        <text x="34" y="86" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Таркиби</text>
-        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round">
-          <path d="M34 98h150"/><path d="M34 110h150"/><path d="M34 122h116"/>
-        </g>
-
-        <text x="34" y="150" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Яроқлилик муддати</text>
-        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 162h96"/></g>
-
-        <text x="34" y="190" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Сақлаш шароити</text>
-        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 202h132"/></g>
-
-        <text x="34" y="230" fill="#152624" font-family="Golos Text,Arial" font-size="12" font-weight="600">Ишлаб чиқарувчи</text>
-        <g stroke="#b9c9c6" stroke-width="5" stroke-linecap="round"><path d="M34 242h110"/><path d="M34 254h78"/></g>
-
-        <rect x="34" y="266" width="44" height="12" rx="2" fill="#d98e04"/>
-
-        <g stroke="#d98e04" stroke-width="2" fill="none">
-          <path d="M214 104h44"/><path d="M214 160h44"/><path d="M214 200h44"/><path d="M214 246h44"/>
-        </g>
-        <g fill="#0d4a46" font-family="Golos Text,Arial" font-size="12" font-weight="600">
-          <text x="264" y="108">текширинг</text>
-          <text x="264" y="164">текширинг</text>
-          <text x="264" y="204">текширинг</text>
-          <text x="264" y="250">текширинг</text>
-        </g>
-      </svg>
+    <div class="grid three">
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M6.5 8v3M10.5 8v4M14.5 8v3M18.5 8v4"/></svg>
+        <h3>Масофа</h3>
+        <p>Компьютер экрани кўздан 50–70 см узоқда — тахминан чўзилган қўл узунлигида бўлсин.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+        <h3>Баландлик</h3>
+        <p>Экраннинг юқори чети кўз сатҳида ёки бироз пастроқ. Ноутбук бўлса, тагига таглик қўйинг.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0012 3z"/></svg>
+        <h3>Ёруғлик ва ялтираш</h3>
+        <p>Хона ёруғлиги экранникига яқин бўлсин. Дераза экраннинг ёнида бўлсин — орқасида ёки рўпарасида эмас. Қоронғида ёруғ экранга тикилманг.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18 7.5 6 12 18M4.7 14h5.6"/><path d="M15 11.5a2.5 2.5 0 015 0V18M20 14.5h-2.5a2 2 0 100 3.5H20"/></svg>
+        <h3>Матн ўлчами</h3>
+        <p>Матнни кўзни қисмасдан ўқийдиган қилиб катталаштиринг. Оч фондаги тўқ матн ўқишни осонлаштиради.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+        <h3>Телефон</h3>
+        <p>Телефонни юздан 30–40 см узоқда тутинг. Ётган ҳолда ва қоронғида узоқ қараманг.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 8h11a3 3 0 10-3-3M3 12h15a3 3 0 11-3 3M3 16h7"/></svg>
+        <h3>Ҳаво</h3>
+        <p>Кондиционер ва иситгич ҳавони қуритади — ҳаво оқими юзга тўғри тушмасин.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= QABUL QILISH ================= -->
-<section>
+<!-- ================= ODATLAR ================= -->
+<section id="odatlar">
   <div class="wrap">
-    <h2>Қўшимчани хавфсиз қабул қилиш қоидалари</h2>
-    <p class="sub">Қуйидагилар озуқавий қўшимчаларга умумий тегишли қоидалар. Аниқ доза ва курс муддати ҳар доим қадоқдаги йўриқномада кўрсатилади — асосий манба ўша.</p>
-    <ol class="steps">
-      <li><b>Йўриқномада ёзилган дозадан ошманг</b><span>«Кўпроқ ичсам, тезроқ таъсир қилади» — нотўғри фикр. Ортиқча доза фойда бермайди, аксинча зарар етказиши мумкин.</span></li>
-      <li><b>Бир стакан оддий сув билан ичинг</b><span>Чой, кофе, энергетик ёки газли ичимлик билан эмас — улар сўрилишга таъсир қилиши мумкин.</span></li>
-      <li><b>Ҳар куни бир хил вақтда</b><span>Эрталаб ва кечқурун каби барқарор режим курсни бир маромда сақлайди.</span></li>
-      <li><b>Бир вақтда бир нечта қўшимча ичманг</b><span>Турли БАДларда бир хил компонент такрорланиши ва миқдор ортиб кетиши мумкин.</span></li>
-      <li><b>Дори билан бирга ичишни шифокор билан келишинг</b><span>Баъзи ўсимлик компонентлари дориларнинг таъсирини кучайтириши ёки сусайтириши мумкин.</span></li>
-      <li><b>Ножўя ҳолатда дарҳол тўхтатинг</b><span>Тошма, қичишиш, кўнгил айниши, бош оғриғи ёки бошқа нохуш ҳолат сезсангиз — қабулни тўхтатиб, шифокорга мурожаат қилинг.</span></li>
-    </ol>
+    <h2>Кўз учун кундалик одатлар</h2>
+    <p class="sub">Кўз саломатлиги кўп жиҳатдан умумий турмуш тарзига боғлиқ. Бу одатлар ҳеч қандай харажат талаб қилмайди.</p>
+
+    <div class="list">
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 019.5 3.5a8.5 8.5 0 1011 11z"/></svg></span>
+        <div><b>Уйқу</b><span>Кечаси 7–8 соат ухланг. Уйқусизликда кўз тезроқ қурийди ва чарчайди.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 22v-6M7 16h10l-5-12z"/></svg></span>
+        <div><b>Очиқ ҳаво</b><span>Кундузи ташқарида юриш кўзга узоққа қараш ва дам олиш имконини беради.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6.5" cy="13" r="3.5"/><circle cx="17.5" cy="13" r="3.5"/><path d="M10 13h4M3 12 2 8.5M21 12l1-3.5"/></svg></span>
+        <div><b>Қуёш кўзойнаги</b><span>Ёзда ва қорли кунда UV400 белгили кўзойнак ультрабинафша нурдан ҳимоя қилади.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 013 0V11M11 10V4a1.5 1.5 0 013 0v7M14 6.5a1.5 1.5 0 013 0V14c0 4-2.5 7-6.5 7S5 18 5 15v-3a1.5 1.5 0 013 0"/></svg></span>
+        <div><b>Кўзни ишқаламанг</b><span>Ишқалаш қизариш ва инфекция хавфини оширади. Кўзга тегишдан олдин қўлни ювинг.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 14.5h13v3h-13zM18.5 14.5v3M21 14.5v3M3 3l18 18"/></svg></span>
+        <div><b>Тамаки</b><span>Чекиш катаракта ва кўз тўр пардаси касалликлари хавфини оширади.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15M5 19l7-7"/></svg></span>
+        <div><b>Овқатланиш</b><span>Кўкат, рангли сабзавот ва мевалар, балиқ ва тухумли мувозанатли овқатланиш кўзга ҳам керак.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M7.5 12a4.5 4.5 0 014.5-4.5"/></svg></span>
+        <div><b>Линзалар гигиенаси</b><span>Шифокор рухсат бермаган бўлса, линзада ухламанг. Уларни водопровод суви билан ювманг, алмаштириш муддатига амал қилинг.</span></div></div>
+      <div class="li"><span class="bub"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></span>
+        <div><b>Пардоз воситалари</b><span>Ухлашдан олдин пардозни тозаланг. Тушь ва кўз қаламини бошқалар билан бўлишманг.</span></div></div>
+    </div>
   </div>
 </section>
 
-<!-- ================= KIMLARGA TAVSIYA ETILMAYDI ================= -->
-<section class="on-sand">
+<!-- ================= BOLALAR ================= -->
+<section class="on-sand" id="bolalar">
   <div class="wrap">
-    <h2>Кимларга тавсия этилмайди</h2>
-    <p class="sub">Қуйидагилардан бирортаси сизга тегишли бўлса, қўшимчани ўз ихтиёрингиз билан бошламанг — аввал шифокор билан маслаҳатлашинг.</p>
+    <h2>Болалар кўзи</h2>
+    <p class="sub">Болаликда кўриш тез ўзгаради. Кўп ҳолларда бола ёмон кўраётганини ўзи айтмайди — буни ота-она сезиши керак.</p>
+
     <div class="grid two">
-      <div>
-        <ul class="plain">
-          <li>18 ёшга тўлмаганлар</li>
-          <li>Таркибий қисмларга аллергияси ёки сезгирлиги борлар</li>
-          <li>Юрак-қон томир касаллиги бўйича доимий дори ичаётганлар</li>
-          <li>Қон босимини туширувчи ёки қон суюлтирувчи дори қабул қилаётганлар</li>
-          <li>Қандли диабет бўйича даво олаётганлар</li>
-          <li>Жигар ёки буйрак касаллиги борлар</li>
-          <li>Яқинда жарроҳлик амалиёти ўтказганлар ёки режалаштирганлар</li>
-          <li>Аниқланмаган доимий оғриқ ёки шикояти борлар</li>
+      <div class="card" style="background:var(--card)">
+        <h3>Ота-оналар учун</h3>
+        <ul>
+          <li>Кундузи камида 2 соат очиқ ҳавода ўйнаш болаларда миопия ривожланиш хавфини камайтириши аниқланган.</li>
+          <li>Экран вақти: 2 ёшгача экран тавсия этилмайди, 2–5 ёшда — кунига 1 соатгача.</li>
+          <li>Китоб ва планшетни юздан 30 см дан яқин тутмасин.</li>
+          <li>Ҳар 20–30 дақиқа ўқиш ёки ўйиндан кейин узоққа қараб танаффус қилсин.</li>
+          <li>Биринчи синфга боришдан олдин кўз шифокорига кўрсатинг.</li>
         </ul>
       </div>
       <div class="notice">
-        <p><b>Нима учун бу муҳим.</b> «Табиий» деган сўз «ҳар кимга хавфсиз» дегани эмас. Ўсимлик экстрактлари ҳам организмга таъсир қилади — шунинг учун улар дорилар билан ўзаро таъсирга киришиши мумкин.</p>
-        <p>Доимий равишда дори ичадиган одам учун қўшимча қўшиш — шифокор билан келишиладиган қарор, мустақил тажриба эмас.</p>
+        <p><b>Шифокорга кўрсатинг, агар бола:</b></p>
+        <ul>
+          <li>кўзини қисиб қараса;</li>
+          <li>телевизорга жуда яқин ўтирса;</li>
+          <li>бошини қийшайтириб қараса;</li>
+          <li>бир кўзи четга оғаётгандек кўринса;</li>
+          <li>кўзини тез-тез ишқаласа ёки бош оғриғидан шикоят қилса;</li>
+          <li>ўқишда ёки доскадаги ёзувни кўришда қийналса.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= QACHON SHIFOKORGA ================= -->
-<section class="on-white">
+<!-- ================= SHIFOKOR ================= -->
+<section class="on-white" id="shifokor">
   <div class="wrap">
-    <h2>Қачон қўшимча эмас, шифокор керак</h2>
-    <p class="sub">Баъзи белгилар текширувни талаб қилади. Уларни қўшимча билан «ёпиб» қўйиш вақтни йўқотишга олиб келади.</p>
+    <h2>Қачон шифокорга учраш керак</h2>
+    <p class="sub">Машқ ва тавсиялар чарчоқда ёрдам беради, лекин баъзи белгиларни кутиб бўлмайди.</p>
 
-    <div class="alert" style="margin-bottom:22px">
-      <p><b>Дарҳол шифокорга мурожаат қилинг, агар:</b></p>
-      <p>кўкрак қафасида оғриқ ёки зўриқишда нафас етишмаслиги бўлса; пешобда қон кўринса; пешоб чиқиши қийинлашса ёки тўхтаб қолса; ҳарорат билан бирга оғриқ бўлса; моякларда шиш, оғриқ ёки қаттиқлик сезилса; сабабсиз тез вазн йўқотсангиз.</p>
+    <div class="alert" style="margin-bottom:12px">
+      <p><b>Дарҳол шошилинч ёрдамга мурожаат қилинг, агар:</b></p>
+      <ul>
+        <li>тўсатдан кўриш йўқолса ёки кескин хиралашса — бир кўзда бўлса ҳам;</li>
+        <li>кўз олдида тўсатдан кўп «пашшалар», чақнашлар пайдо бўлса ёки кўриш майдонига парда тушгандек бўлса;</li>
+        <li>кўзда кучли оғриқ бўлса, айниқса бош оғриғи, кўнгил айниши ва ёруғлик атрофида рангли ҳалқалар билан;</li>
+        <li>тўсатдан иккита кўриш бошланса;</li>
+        <li>кўз жароҳатланса.</li>
+      </ul>
     </div>
-
-    <div class="grid three">
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M6 3v6a6 6 0 0012 0V3"/><path d="M4 3h4M16 3h4"/><circle cx="18" cy="16" r="3"/><path d="M12 15v-2"/></svg>
-        <h3>Текширув аниқлик беради</h3>
-        <p>Бир хил шикоятнинг ўнлаб сабаби бўлиши мумкин. Сабабни фақат кўрик ва таҳлил аниқлайди.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.2l3.4 2"/></svg>
-        <h3>Вақт муҳим</h3>
-        <p>Эрта аниқланган ҳолат кўпинча осонроқ ҳал бўлади. Кечиктириш имкониятни камайтиради.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M4 19V6.5A2.5 2.5 0 016.5 4H19v15"/><path d="M6.5 19H19"/><path d="M9 8.5h7M9 12h5"/></svg>
-        <h3>Ёзиб боринг</h3>
-        <p>Шикоят қачон бошланганини, қандай дорилар ичишингизни ёзиб борсангиз, шифокорга ёрдам берасиз.</p>
-      </div>
+    <div class="alert" style="margin-bottom:16px">
+      <p><b>Кўзга кимёвий модда тушса:</b> кўзни дарҳол камида 15 дақиқа тоза оқар сув билан ювинг, кейин зудлик билан шифокорга боринг. Кўзни ишқаламанг.</p>
     </div>
-  </div>
-</section>
-
-<!-- ================= UMUMIY SALOMATLIK ================= -->
-<section>
-  <div class="wrap">
-    <h2>Эркаклар саломатлигига таъсир қиладиган омиллар</h2>
-    <p class="sub">Кундалик тонус ва умумий ҳолат кўп жиҳатдан турмуш тарзига боғлиқ. Ҳеч бир қўшимча бу омилларнинг ўрнини босолмайди.</p>
-
-    <div class="grid three">
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 019.5 3.5a8.5 8.5 0 1011 11z"/></svg>
-        <h3>Уйқу</h3>
-        <p>Кечаси 7–8 соат уйқу гормонал мувозанат ва кундузги энергия учун асос. Сурункали уйқусизлик биринчи навбатда тонусга уради.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M3.5 12h2M18.5 12h2"/><rect x="5.5" y="8.5" width="3.5" height="7" rx="1.2"/><rect x="15" y="8.5" width="3.5" height="7" rx="1.2"/><path d="M9 12h6"/></svg>
-        <h3>Ҳаракат</h3>
-        <p>Ҳафтасига 150 минут ўртача жисмоний фаоллик — юрак, қон айланиши ва умумий ҳолат учун фойдали.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M12 3.5c3 3.4 5.5 6.2 5.5 9.3a5.5 5.5 0 11-11 0c0-3.1 2.5-5.9 5.5-9.3z"/></svg>
-        <h3>Сув ва овқат</h3>
-        <p>Мунтазам овқатланиш, сабзавот ва оқсил етарли бўлиши, шакар ва ортиқча ёғни камайтириш умумий ҳолатни яхшилайди.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 15.5s1.5-1.5 4-1.5 4 1.5 4 1.5"/><path d="M9 9.5h.01M15 9.5h.01"/></svg>
-        <h3>Стресс</h3>
-        <p>Узоқ давом этган зўриқиш уйқуга, иштаҳага ва кайфиятга таъсир қилади. Дам олиш режими ҳам даво қисми.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><path d="M3.5 17h13a3 3 0 000-6h-13"/><path d="M18.5 11V8.5M21 17v-4"/><path d="M6 8.5c0-1.5 1.5-1.5 1.5-3M10 8.5c0-1.5 1.5-1.5 1.5-3"/></svg>
-        <h3>Тамаки ва алкоголь</h3>
-        <p>Чекиш қон томирларига, алкоголь эса уйқу ва гормонал фонга салбий таъсир қилади. Камайтириш аниқ фойда беради.</p>
-      </div>
-      <div class="card">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0d4a46" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.4"/><path d="M3.5 9h17M8 2.5v4M16 2.5v4"/><path d="M9 13.5l2 2 3.5-3.8"/></svg>
-        <h3>Йиллик текширув</h3>
-        <p>Қон босими, қанд ва холестерин даражасини йилига бир марта текшириш кўп муаммони эрта аниқлайди.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= NOTO'G'RI FIKRLAR ================= -->
-<section class="on-white">
-  <div class="wrap">
-    <h2>Кенг тарқалган нотўғри фикрлар</h2>
-    <p class="sub">Қўшимчалар ҳақида бозорда кўп ваъда айтилади. Қуйидагилар — эҳтиёт бўлиш керак бўлган жойлар.</p>
 
     <div class="grid two">
       <div class="card">
-        <h3>«Табиий — демак хавфсиз»</h3>
-        <p>Ўсимлик ҳам фаол модда. У аллергия чақириши ва дори билан ўзаро таъсирга киришиши мумкин. Табиийлик хавфсизлик кафолати эмас.</p>
+        <h3>Режали кўрик</h3>
+        <ul>
+          <li>Катталар — 1–2 йилда бир марта.</li>
+          <li>40 ёшдан кейин — кўз ички босимини ҳам текширтиринг.</li>
+          <li>Қандли диабет бўлса — йилига камида бир марта кўз туби текшируви.</li>
+          <li>Юқори қон босими бўлса — шифокор тайинлаган муддатда.</li>
+        </ul>
       </div>
       <div class="card">
-        <h3>«Бир зумда таъсир қилади»</h3>
-        <p>Озуқавий қўшимчада дарҳол таъсир бўлмайди. Кимдир дарҳол натижа ваъда қилса, бу огоҳлантирувчи белги.</p>
-      </div>
-      <div class="card">
-        <h3>«99% натижа кафолатланади»</h3>
-        <p>Қўшимчада бундай кафолат бўлиши мумкин эмас. Аниқ фоиз айтилган ҳар қандай реклама текширилмаган рақам ишлатаётган бўлади.</p>
-      </div>
-      <div class="card">
-        <h3>«Дорини ташлаб, шуни ичсам бўлади»</h3>
-        <p>Йўқ. Шифокор тайинлаган давони фақат ўша шифокор ўзгартиради. Ўзбошимчалик билан тўхтатиш хавфли.</p>
+        <h3>Кечиктирмай учранг, агар:</h3>
+        <ul>
+          <li>кўриш аста-секин ёмонлашаётган бўлса;</li>
+          <li>яқиндаги матнни ўқиш қийинлашса;</li>
+          <li>кўз тез-тез қизарса, ачишса ёки қурийверса;</li>
+          <li>бош оғриғи кўпинча кўз зўриқишидан кейин бошланса.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SAQLASH ================= -->
-<section class="on-sand">
+<!-- ================= AFSONALAR ================= -->
+<section>
   <div class="wrap">
-    <h2>Сақлаш ва эҳтиёт чоралари</h2>
-    <div class="grid three">
-      <div class="card" style="background:#fff;border-color:#ddd0b4">
-        <h3>Ҳарорат</h3>
-        <p>Қуруқ, салқин жойда, +25°C дан юқори бўлмаган ҳароратда. Тўғридан-тўғри қуёш нуридан ва намликдан узоқда.</p>
+    <h2>Кенг тарқалган нотўғри фикрлар</h2>
+    <p class="sub">Кўз ҳақида кўп гап юради. Қуйидагилар — энг кўп учрайдиганлари.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>«Машқ қилсам, кўзойнак керак бўлмай қолади»</h3>
+        <p>Машқлар кўз чарчоғини енгиллаштиради, лекин миопия, гиперметропия ёки астигматизмни тузатмайди. Кўзойнак ёки линзани шифокор маслаҳатисиз ташламанг.</p>
       </div>
-      <div class="card" style="background:#fff;border-color:#ddd0b4">
-        <h3>Болалар</h3>
-        <p>Болалар қўли етмайдиган жойда сақланг. Қўшимча болалар учун мўлжалланмаган.</p>
+      <div class="card">
+        <h3>«Кўзойнак кўзни ялқов қилади»</h3>
+        <p>Тўғри танланган кўзойнак кўзни ёмонлаштирмайди. Аксинча, болаларда кўриш нуқсонини тузатмаслик ялқов кўз (амблиопия) хавфини оширади.</p>
       </div>
-      <div class="card" style="background:#fff;border-color:#ddd0b4">
-        <h3>Муддат</h3>
-        <p>Яроқлилик муддати қадоқда кўрсатилган. Муддати ўтган ёки қадоғи шикастланган маҳсулотни ишлатманг.</p>
+      <div class="card">
+        <h3>«Сабзи еса, кўриш яхшиланади»</h3>
+        <p>А витамини кўз учун керак, лекин овқатланиши етарли одамда ортиқча сабзи кўришни яхшиламайди.</p>
+      </div>
+      <div class="card">
+        <h3>«Хира ёруғликда ўқиш кўзни бузади»</h3>
+        <p>Хира ёруғликда ўқиш кўзни тез чарчатади, лекин доимий зарар етказмайди. Яхши ёруғлик — қулайлик ва чарчоқни камайтириш учун.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= FAQ ================= -->
-<section>
+<section class="on-white faq" id="savollar">
   <div class="wrap">
     <h2>Саволлар ва жавоблар</h2>
-    <p class="sub">Жавоб топмасангиз, мурожаат қолдиринг ёки Telegram орқали ёзинг.</p>
+    <p class="sub">Энг кўп бериладиган саволлар.</p>
 
-    <details><summary>А-9 Андробосс дорими?</summary><div class="body">Йўқ. Бу озуқавий қўшимча (БАД). У касалликни даволамайди, диагноз қўймайди ва шифокор тайинлаган даволашнинг ўрнини босмайди.</div></details>
+    <details><summary>Машқларни кунига неча марта қилиш керак?</summary><div class="body">Экран олдида ишласангиз, 20-20-20 қоидаси ва 1–2 соатда бир марта қисқа машқ етарли. Тўлиқ тўплам 4–5 дақиқа олади.</div></details>
 
-    <details><summary>Таркибини қаердан биламан?</summary><div class="body">Тўлиқ таркиб маҳсулот қадоғида ёзилган. Бундан ташқари, мурожаат қолдирсангиз ёки Telegram орқали ёзсангиз, таркиб рўйхатини юборамиз.</div></details>
+    <details><summary>Машқлар миопияни тузатадими?</summary><div class="body">Йўқ. Миопия (узоқни яхши кўрмаслик) кўз олмасининг шакли билан боғлиқ — уни машқ билан тузатиб бўлмайди. Кўриш нуқсонини кўз шифокори аниқлайди ва кўзойнак, линза ёки бошқа усулни тавсия қилади.</div></details>
 
-    <details><summary>Шифокор билан маслаҳатлашиш шартми?</summary><div class="body">Сурункали касаллигингиз бўлса, ҳар куни дори ичсангиз ёки 45 ёшдан ошган бўлсангиз — ҳа, тавсия этилади. Шикоятнинг сабабини фақат текширув аниқлайди.</div></details>
+    <details><summary>Машқ пайтида кўзим оғриса ёки бошим айланса-чи?</summary><div class="body">Дарҳол тўхтатинг ва кўзни юмиб дам олинг. Такрорланса, кўз шифокорига мурожаат қилинг.</div></details>
 
-    <details><summary>Натижа қачон сезилади?</summary><div class="body">Қўшимчада натижа кафолатланмайди ва ҳар кимда турлича бўлади. Кимдадир сезиларли ўзгариш бўлмаслиги ҳам мумкин. Биз аниқ муддат ёки фоиз ваъда қилмаймиз.</div></details>
+    <details><summary>Экрандаги кўк ёруғлик фильтри керакми?</summary><div class="body">Экрандаги кўк ёруғлик кўзга зарар етказиши исботланмаган. Кечқурунги фильтр уйқуга ёрдам бериши мумкин, лекин кўз чарчоғининг асосий сабаби — узоқ тикилиш ва кам пирпиратиш. Бунда танаффус кўпроқ ёрдам беради.</div></details>
 
-    <details><summary>Ножўя таъсири бўладими?</summary><div class="body">Таркибий қисмларга индивидуал сезгирлик бўлиши мумкин. Тошма, қичишиш, кўнгил айниши ёки бошқа нохуш ҳолат сезсангиз, қабулни тўхтатинг ва шифокорга мурожаат қилинг.</div></details>
+    <details><summary>Кўзим тез-тез қуриб қолса нима қилай?</summary><div class="body">Пирпиратиш машқини қилинг, 20-20-20 қоидасига амал қилинг, ҳаво оқими юзга тушмасин. Қуриш доимий бўлса, кўз шифокорига учранг — у сабабини аниқлайди.</div></details>
 
-    <details><summary>Бошқа дори билан бирга ичса бўладими?</summary><div class="body">Буни ўзингиз ҳал қилманг. Қадоқни ёки таркиб рўйхатини шифокорингизга кўрсатинг — айниқса юрак, қон босими, диабет ёки қон суюлтирувчи дори ичаётган бўлсангиз.</div></details>
+    <details><summary>Линза таққанда машқ қилса бўладими?</summary><div class="body">Пирпиратиш, яқин-узоқ ва кўз ҳаракатлари машқларини линза билан ҳам қилиш мумкин. Ноқулайлик сезсангиз, тўхтатинг ва кўзни ишқаламанг.</div></details>
 
-    <details><summary>Дозани оширсам, таъсири кучаядими?</summary><div class="body">Йўқ. Йўриқномадаги доза — чегара, тавсия эмас. Ортиқча доза фойда бермайди ва зарар етказиши мумкин.</div></details>
+    <details><summary>Таймер телефон экрани ўчганда ишлайдими?</summary><div class="body">Таймер саҳифа очиқ турганда ишлайди. Телефон қулфланса, браузер уни секинлатиши мумкин. Ишончли бўлиши учун телефондаги оддий таймер ёки эслатмадан фойдаланинг.</div></details>
 
-    <details><summary>Бошқа қўшимчалар билан бирга ичса бўладими?</summary><div class="body">Бир вақтда бир нечта БАД ичиш тавсия этилмайди — уларда бир хил компонентлар такрорланиб, миқдор ортиб кетиши мумкин.</div></details>
-
-    <details><summary>Курсни тўхтатиб, кейин давом эттирса бўладими?</summary><div class="body">Курс тартиби қадоқдаги йўриқномада кўрсатилган. Аниқ жавоб учун операторимиздан сўранг ёки шифокор билан маслаҳатлашинг.</div></details>
-
-    <details><summary>Мурожаат қолдирсам, нима бўлади?</summary><div class="body">Операторимиз сиз билан боғланиб, саволларингизга жавоб беради ва маҳсулот ҳақида маълумот юборади. Мажбурият юкланмайди.</div></details>
-  </div>
-</section>
-
-<!-- ================= MUROJAAT ================= -->
-<section class="on-white" id="murojaat">
-  <div class="wrap">
-    <h2>Мурожаат қолдириш</h2>
-    <p class="sub">Саволингизни ёзинг — операторимиз боғланиб, маҳсулот, таркиб ва қабул қилиш тартиби бўйича маълумот беради. Ҳеч қандай мажбурият йўқ.</p>
-
-    <form id="askForm" novalidate>
-      <div class="field">
-        <label for="name">Исмингиз</label>
-        <input id="name" name="name" type="text" autocomplete="name" required>
-      </div>
-      <div class="field">
-        <label for="phone">Телефон рақамингиз</label>
-        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 __ ___ __ __" required>
-      </div>
-      <div class="field">
-        <label for="region">Ҳудуд</label>
-        <select id="region" name="region" required>
-          <option value="">Танланг</option>
-          <option>Тошкент шаҳри</option><option>Тошкент вилояти</option>
-          <option>Андижон вилояти</option><option>Бухоро вилояти</option>
-          <option>Жиззах вилояти</option><option>Қашқадарё вилояти</option>
-          <option>Навоий вилояти</option><option>Наманган вилояти</option>
-          <option>Самарқанд вилояти</option><option>Сирдарё вилояти</option>
-          <option>Сурхондарё вилояти</option><option>Фарғона вилояти</option>
-          <option>Хоразм вилояти</option><option>Қорақалпоғистон Республикаси</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="question">Саволингиз</label>
-        <textarea id="question" name="question" placeholder="Масалан: таркиби ҳақида маълумот керак"></textarea>
-      </div>
-      <label class="check" for="agree">
-        <input id="agree" type="checkbox" required>
-        <span>Шахсий маълумотларим мурожаатга жавоб бериш учун қайта ишланишига розиман. Маҳсулот дори восита эмаслигини тушундим.</span>
-      </label>
-      <button class="btn" type="submit">Мурожаат юбориш</button>
-      <div id="msg" role="status" aria-live="polite"></div>
-    </form>
+    <details><summary>Болалар бу машқларни қилса бўладими?</summary><div class="body">Ҳа, ўйин тарзида қилиш мумкин. Лекин болалар учун энг муҳими — очиқ ҳавода вақт ўтказиш, экран вақтини чеклаш ва мунтазам кўрик.</div></details>
   </div>
 </section>
 
@@ -496,92 +756,444 @@ footer p{margin:0 0 9px}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <h3>А-9 Андробосс</h3>
-        <p>Озуқавий қўшимча (БАД). Дори восита эмас, касалликни даволамайди ва шифокор тайинлаган даволашнинг ўрнини босмайди. Натижа кафолатланмайди.</p>
-        <p>Маҳсулотнинг тўлиқ таркиби, ишлаб чиқарувчиси ва яроқлилик муддати қадоқда кўрсатилган.</p>
+        <h3>Кўз саломатлиги</h3>
+        <p>Кўз чарчоғини енгиллаштирувчи машқлар ва кундалик тавсиялар. Саҳифада ҳеч қандай маҳсулот ёки дори восита тарғиб қилинмайди.</p>
       </div>
       <div>
-        <h3>Боғланиш</h3>
-        <p><a href="https://t.me/androbossA9" rel="noopener">Telegram орқали ёзиш</a></p>
-        <p><a href="#murojaat">Мурожаат қолдириш</a></p>
-        <p><a href="#">Юқорига қайтиш</a></p>
+        <h3>Бўлимлар</h3>
+        <div class="foot-links">
+          <a href="#mashqlar">Машқлар</a>
+          <a href="#taymer">20-20-20 таймер</a>
+          <a href="#shifokor">Шифокорга қачон</a>
+          <a href="#">Юқорига</a>
+        </div>
       </div>
     </div>
-    <p class="fineprint">Ушбу саҳифадаги маълумот танишиш учун берилган ва тиббий маслаҳат ўрнини босмайди. Қўшимчани қабул қилишдан олдин шифокор билан маслаҳатлашинг. Индивидуал сезгирлик бўлиши мумкин. 18 ёшгача тавсия этилмайди.</p>
+    <p class="fineprint">Ушбу саҳифадаги маълумот танишиш учун берилган ва тиббий маслаҳат ўрнини босмайди. Кўриш билан боғлиқ шикоят бўлса, кўз шифокорига (офтальмологга) мурожаат қилинг.</p>
   </div>
 </footer>
+
+<!-- ================= EXERCISE PLAYER ================= -->
+<div class="player" id="player" role="dialog" aria-modal="true" aria-labelledby="pName" aria-hidden="true">
+  <div class="p-top">
+    <div class="p-title"><b id="pName">Машқ</b><small id="pSub"></small></div>
+    <button class="ibtn js-sound" type="button" aria-label="Овозли сигнални ёқиш ёки ўчириш">
+      <svg class="i-on" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 010 6M18 6.5a7.5 7.5 0 010 11"/></svg>
+      <svg class="i-off" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+      <span class="lbl sr"></span>
+    </button>
+    <button class="ibtn" id="pClose" type="button" aria-label="Ёпиш">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="p-stage">
+    <div class="arena" id="pArena" hidden><span class="dot" id="pDot"></span></div>
+    <div class="pic" id="pPic" hidden></div>
+    <div class="p-done" id="pDone" hidden>
+      <div class="pic"><svg viewBox="0 0 200 200" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="100" cy="100" r="70"/><path d="M68 102l22 22 44-48" stroke="#e09a12"/></svg></div>
+      <p class="p-text">Тайёр! Кўзларингизга дам бердингиз.</p>
+      <p class="p-count">Энди 20-20-20 қоидасини ёдда тутинг.</p>
+      <div class="p-ctrl">
+        <button class="btn btn-ghost" id="pAgain" type="button">Яна бир марта</button>
+        <button class="btn" id="pEnd" type="button">Ёпиш</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-meta" id="pMeta">
+    <div class="p-ring">
+      <svg viewBox="0 0 80 80" aria-hidden="true"><circle class="track" cx="40" cy="40" r="34"/><circle class="prog" id="pRing" cx="40" cy="40" r="34"/></svg>
+      <span class="p-num" id="pNum">0</span>
+    </div>
+    <div>
+      <p class="p-text" id="pText" aria-live="polite"></p>
+      <p class="p-count" id="pCount"></p>
+    </div>
+  </div>
+  <div class="p-bar" id="pBarWrap"><i id="pBar"></i></div>
+  <div class="p-ctrl" id="pCtrl">
+    <button class="btn btn-ghost" id="pPause" type="button">
+      <svg class="i-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+      <svg class="i-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+      <span class="lbl">Пауза</span>
+    </button>
+    <button class="btn" id="pSkip" type="button">
+      <span class="lbl">Кейингиси</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 5.5v13l9-6.5zM16 5.5h3v13h-3z"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ================= FLOATING TIMER ================= -->
+<button class="pill" id="pill" type="button" aria-hidden="true" tabindex="-1">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.5M9.5 2.5h5"/></svg>
+  <span id="pillTxt"></span>
+</button>
 
 <script>
 (function () {
   "use strict";
 
-  var TG = "https://t.me/androbossA9";
-  var form = document.getElementById("askForm");
-  var msg  = document.getElementById("msg");
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function load(k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  var root = document.documentElement;
+  var BASE_TITLE = document.title;
 
-  function show(text, isErr) {
-    msg.style.display = "block";
-    msg.className = isErr ? "err" : "";
-    msg.textContent = text;
-  }
-
-  function copyText(text) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
+  /* ================= Овоз ва тебраниш ================= */
+  var soundOn = load("kz_sound", true) !== false;
+  var actx = null;
+  function audio() {
+    if (!actx) {
+      var C = window.AudioContext || window.webkitAudioContext;
+      if (C) { try { actx = new C(); } catch (e) { actx = null; } }
     }
-    return new Promise(function (resolve, reject) {
-      try {
-        var ta = document.createElement("textarea");
-        ta.value = text;
-        ta.setAttribute("readonly", "");
-        ta.style.position = "fixed";
-        ta.style.opacity = "0";
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        document.body.removeChild(ta);
-        resolve();
-      } catch (err) { reject(err); }
+    if (actx && actx.state === "suspended") { try { actx.resume(); } catch (e) {} }
+    return actx;
+  }
+  function tone(freq, dur, delay) {
+    if (!soundOn) return;
+    var a = audio(); if (!a) return;
+    try {
+      var t = a.currentTime + (delay || 0);
+      var o = a.createOscillator(), g = a.createGain();
+      o.type = "sine"; o.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.28, t + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(g); g.connect(a.destination);
+      o.start(t); o.stop(t + dur + 0.05);
+    } catch (e) {}
+  }
+  function buzz(p) { try { if (navigator.vibrate) navigator.vibrate(p); } catch (e) {} }
+  function cue() { tone(660, 0.16); buzz(50); }
+  function chime() { tone(660, 0.18); tone(880, 0.3, 0.22); buzz([80, 60, 80]); }
+
+  function syncSound() {
+    $$(".js-sound").forEach(function (b) {
+      b.setAttribute("aria-pressed", soundOn ? "true" : "false");
+      b.classList.toggle("off", !soundOn);
+      var s = b.querySelector(".lbl");
+      if (s) s.textContent = soundOn ? "Овозли сигнал ёқилган" : "Овозли сигнал ўчирилган";
     });
   }
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    var name     = form.name.value.trim();
-    var phone    = form.phone.value.trim();
-    var region   = form.region.value;
-    var question = form.question.value.trim();
-
-    if (!name)  { show("Исмингизни ёзинг.", true); form.name.focus(); return; }
-    if (phone.replace(/\D/g, "").length < 9) { show("Телефон рақамини тўлиқ киритинг.", true); form.phone.focus(); return; }
-    if (!region) { show("Ҳудудни танланг.", true); form.region.focus(); return; }
-    if (!form.agree.checked) { show("Давом этиш учун розиликни белгиланг.", true); return; }
-
-    var text =
-      "Мурожаат\n" +
-      "Исм: " + name + "\n" +
-      "Телефон: " + phone + "\n" +
-      "Ҳудуд: " + region +
-      (question ? "\nСавол: " + question : "");
-
-    var btn = form.querySelector("button[type=submit]");
-    btn.disabled = true;
-    btn.textContent = "Юборилмоқда…";
-
-    copyText(text).then(function () {
-      show("Маълумотларингиз нусхаланди. Telegram очилади — чатга қўйиб юборинг.", false);
-    }).catch(function () {
-      show("Telegram очилади — исмингиз ва рақамингизни ёзиб юборинг.", false);
-    }).then(function () {
-      setTimeout(function () {
-        btn.disabled = false;
-        btn.textContent = "Мурожаат юбориш";
-        window.open(TG, "_blank", "noopener");
-      }, 1400);
+  $$(".js-sound").forEach(function (b) {
+    b.addEventListener("click", function () {
+      soundOn = !soundOn; save("kz_sound", soundOn); syncSound();
+      if (soundOn) cue();
     });
   });
+  syncSound();
+
+  /* ================= Машқлар ================= */
+  function rep(n, arr) { var out = []; for (var i = 0; i < n; i++) out = out.concat(arr); return out; }
+  var EX = {
+    blink: { title: "Пирпиратиш", steps:
+      [{ t: "Елкаларни бўшаштиринг, экрандан кўзингизни узинг", s: 4, v: "eye" }]
+      .concat(rep(8, [{ t: "Секин юминг ва ушлаб туринг", s: 2, v: "closed" }, { t: "Секин очинг", s: 2, v: "eye" }]))
+      .concat([{ t: "Оддий пирпиратиб, ҳолатга қайтинг", s: 4, v: "eye" }]) },
+    palm: { title: "Кафт билан дам бериш", steps: [
+      { t: "Кафтларни бир-бирига ишқаб иситинг", s: 10, v: "warm" },
+      { t: "Кўзни юминг, кафтларни устига гумбаздек қўйинг. Кўзни босманг", s: 6, v: "palm" },
+      { t: "Қоронғиликда секин нафас олинг. Сигнални кутинг", s: 45, v: "palm" },
+      { t: "Кафтларни олинг, кўзни секин очинг", s: 5, v: "eye" }] },
+    focus: { title: "Яқин ва узоқ", steps:
+      [{ t: "Бош бармоқни юздан 25–30 см узоқда ушланг", s: 5, v: "near" }]
+      .concat(rep(4, [{ t: "Бармоққа қаранг — у аниқ кўринсин", s: 10, v: "near" }, { t: "Узоққа қаранг — 6 метрдан нарига", s: 10, v: "far" }])) },
+    moves: { title: "Кўз ҳаракатлари", steps:
+      [{ t: "Бошни қимирлатманг. Нуқтани фақат кўз билан кузатинг", s: 4, v: "dot", d: "center" }]
+      .concat(rep(3, [{ t: "Юқорига", s: 2, v: "dot", d: "up", q: 1 }, { t: "Пастга", s: 2, v: "dot", d: "down", q: 1 }]))
+      .concat(rep(3, [{ t: "Чапга", s: 2, v: "dot", d: "left", q: 1 }, { t: "Ўнгга", s: 2, v: "dot", d: "right", q: 1 }]))
+      .concat([
+        { t: "Диагонал бўйлаб", s: 2, v: "dot", d: "ul", q: 1 },
+        { t: "Диагонал бўйлаб", s: 2, v: "dot", d: "dr", q: 1 },
+        { t: "Диагонал бўйлаб", s: 2, v: "dot", d: "ur", q: 1 },
+        { t: "Диагонал бўйлаб", s: 2, v: "dot", d: "dl", q: 1 },
+        { t: "Айланага тайёрланинг — юқорига қаранг", s: 2, v: "dot", d: "up", q: 1 },
+        { t: "Соат мили бўйлаб айлана", s: 8, v: "dot", d: "cw", q: 1 },
+        { t: "Тескари айлана", s: 8, v: "dot", d: "ccw", q: 1 },
+        { t: "Кўзни юминг ва дам олинг. Сигнални кутинг", s: 10, v: "closed" }]) }
+  };
+  var ORDER = ["blink", "palm", "focus", "moves"];
+
+  function sum(steps) { return steps.reduce(function (a, s) { return a + s.s; }, 0); }
+  function fmtDur(sec) {
+    if (sec < 60) return sec + " сония";
+    var m = Math.round(sec / 30) / 2;
+    return "≈" + String(m).replace(".", ",") + " дақиқа";
+  }
+  function buildAll() {
+    var list = [];
+    ORDER.forEach(function (k, n) {
+      if (n > 0) list.push({ t: "Кейинги машқ: " + EX[k].title, s: 4, v: "next" });
+      EX[k].steps.forEach(function (s) { list.push(Object.assign({ ex: EX[k].title }, s)); });
+    });
+    return list;
+  }
+  $$("[data-dur]").forEach(function (el) {
+    var k = el.getAttribute("data-dur");
+    el.textContent = fmtDur(sum(k === "all" ? buildAll() : EX[k].steps));
+  });
+
+  var S = 'viewBox="0 0 200 200" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+  var LBL = 'fill="#fff" stroke="none" font-size="26" font-weight="700" text-anchor="middle" font-family="Golos Text,Arial,sans-serif"';
+  var PIC = {
+    eye: '<svg ' + S + '><path d="M20 100Q100 30 180 100Q100 170 20 100Z"/><circle cx="100" cy="100" r="30" fill="#17756f"/><circle cx="100" cy="100" r="13" fill="#062624" stroke="none"/><circle cx="110" cy="90" r="5" fill="#fff" stroke="none"/></svg>',
+    closed: '<svg ' + S + '><path d="M20 95Q100 150 180 95"/><path d="M52 113l-8 15M84 121l-4 17M116 121l4 17M148 113l8 15"/></svg>',
+    palm: '<svg ' + S + '><path d="M30 150V95a70 70 0 01140 0v55"/><path d="M62 126Q100 148 138 126" opacity=".7"/></svg>',
+    warm: '<svg ' + S + '><rect x="58" y="40" width="36" height="120" rx="18"/><rect x="106" y="40" width="36" height="120" rx="18"/><path d="M36 80l8-12 8 12M36 120l8 12 8-12M148 80l8-12 8 12M148 120l8 12 8-12" stroke="#e09a12"/></svg>',
+    near: '<svg ' + S + '><circle cx="100" cy="88" r="58"/><circle cx="100" cy="88" r="26" fill="#e09a12" stroke="none"/><text x="100" y="186" ' + LBL + '>ЯҚИН</text></svg>',
+    far: '<svg ' + S + '><path d="M18 140L70 78l30 34 30-44 52 72z"/><circle cx="152" cy="42" r="10" fill="#e09a12" stroke="none"/><text x="100" y="186" ' + LBL + '>УЗОҚ</text></svg>',
+    next: '<svg ' + S + '><circle cx="100" cy="100" r="70"/><path d="M86 68l32 32-32 32"/></svg>'
+  };
+  var POS = { center: [50, 50], up: [50, 12], down: [50, 88], left: [12, 50], right: [88, 50], ul: [23, 23], dr: [77, 77], ur: [77, 23], dl: [23, 77] };
+
+  var pl = $("#player"), pArena = $("#pArena"), pDot = $("#pDot"), pPic = $("#pPic"), pDone = $("#pDone"),
+      pName = $("#pName"), pSub = $("#pSub"), pText = $("#pText"), pCount = $("#pCount"), pNum = $("#pNum"),
+      pRing = $("#pRing"), pBar = $("#pBar"), pBarWrap = $("#pBarWrap"), pMeta = $("#pMeta"), pCtrl = $("#pCtrl"),
+      pPause = $("#pPause"), pSkip = $("#pSkip"), pClose = $("#pClose"), pAgain = $("#pAgain"), pEnd = $("#pEnd");
+  var RING_C = 2 * Math.PI * 34;
+  pRing.style.strokeDasharray = RING_C;
+  var P = { key: null, steps: null, before: [], total: 0, i: 0, t0: 0, acc: 0, paused: false, raf: 0, opener: null };
+
+  var wl = null;
+  function wakeOn() {
+    try {
+      if ("wakeLock" in navigator && !wl) {
+        navigator.wakeLock.request("screen").then(function (l) { wl = l; }).catch(function () {});
+      }
+    } catch (e) {}
+  }
+  function wakeOff() { try { if (wl) wl.release(); } catch (e) {} wl = null; }
+
+  function view(w) {
+    pArena.hidden = w !== "arena";
+    pPic.hidden = w !== "pic";
+    pDone.hidden = w !== "done";
+    pMeta.hidden = pCtrl.hidden = pBarWrap.hidden = (w === "done");
+  }
+  function setPauseBtn() {
+    pPause.querySelector(".lbl").textContent = P.paused ? "Давом этиш" : "Пауза";
+    pPause.classList.toggle("paused", P.paused);
+  }
+
+  function openPlayer(key, opener) {
+    var steps = key === "all" ? buildAll() : EX[key].steps.slice();
+    P.key = key; P.steps = steps; P.opener = opener || P.opener;
+    P.before = []; var acc = 0;
+    steps.forEach(function (s) { P.before.push(acc); acc += s.s; });
+    P.total = acc;
+    pName.textContent = key === "all" ? "Тўлиқ тўплам" : EX[key].title;
+    pl.classList.add("open"); pl.setAttribute("aria-hidden", "false");
+    root.classList.add("lock");
+    audio(); wakeOn(); updatePill();
+    P.paused = false; setPauseBtn();
+    go(0);
+    cancelAnimationFrame(P.raf);
+    P.raf = requestAnimationFrame(frame);
+    setTimeout(function () { pPause.focus(); }, 40);
+  }
+
+  function go(i) {
+    P.i = i; P.acc = 0; P.t0 = performance.now();
+    var st = P.steps[i];
+    pText.textContent = st.t;
+    pCount.textContent = "Қадам " + (i + 1) + " / " + P.steps.length;
+    pSub.textContent = P.key === "all" ? (st.ex || "Ўтиш") : fmtDur(P.total);
+    if (st.v === "dot") {
+      view("arena");
+      if (st.d === "cw" || st.d === "ccw") { pDot.classList.add("free"); }
+      else {
+        pDot.classList.remove("free");
+        var p = POS[st.d] || POS.center;
+        pDot.style.left = p[0] + "%"; pDot.style.top = p[1] + "%";
+      }
+    } else {
+      view("pic");
+      pPic.innerHTML = PIC[st.v] || PIC.eye;
+    }
+    if (!st.q) cue();
+  }
+
+  function frame(now) {
+    if (!P.steps) return;
+    var st = P.steps[P.i];
+    var el = P.paused ? P.acc : P.acc + (now - P.t0) / 1000;
+    if (el >= st.s) {
+      if (P.i + 1 >= P.steps.length) { finish(); return; }
+      go(P.i + 1); st = P.steps[P.i]; el = 0;
+    }
+    pNum.textContent = Math.max(1, Math.ceil(st.s - el));
+    pRing.style.strokeDashoffset = RING_C * (el / st.s);
+    pBar.style.width = (100 * (P.before[P.i] + el) / P.total).toFixed(2) + "%";
+    if (st.v === "dot" && (st.d === "cw" || st.d === "ccw")) {
+      var a = (st.d === "cw" ? 1 : -1) * 2 * Math.PI * (el / st.s);
+      pDot.style.left = (50 + 38 * Math.sin(a)) + "%";
+      pDot.style.top = (50 - 38 * Math.cos(a)) + "%";
+    }
+    P.raf = requestAnimationFrame(frame);
+  }
+
+  function togglePause() {
+    if (!P.steps) return;
+    var now = performance.now();
+    if (P.paused) { P.t0 = now; P.paused = false; }
+    else { P.acc += (now - P.t0) / 1000; P.paused = true; }
+    setPauseBtn();
+  }
+  function skip() {
+    if (!P.steps) return;
+    if (P.i + 1 >= P.steps.length) { finish(); return; }
+    P.paused = false; setPauseBtn();
+    go(P.i + 1);
+  }
+  function finish() {
+    cancelAnimationFrame(P.raf);
+    P.steps = null;
+    chime(); wakeOff();
+    view("done");
+    pSub.textContent = "";
+    setTimeout(function () { pEnd.focus(); }, 40);
+  }
+  function closePlayer() {
+    cancelAnimationFrame(P.raf);
+    P.steps = null; wakeOff();
+    pl.classList.remove("open"); pl.setAttribute("aria-hidden", "true");
+    root.classList.remove("lock");
+    updatePill();
+    if (P.opener && P.opener.focus) P.opener.focus();
+    P.opener = null;
+  }
+
+  $$("[data-start]").forEach(function (b) {
+    b.addEventListener("click", function () { P.opener = null; openPlayer(b.getAttribute("data-start"), b); });
+  });
+  pPause.addEventListener("click", togglePause);
+  pSkip.addEventListener("click", skip);
+  pClose.addEventListener("click", closePlayer);
+  pEnd.addEventListener("click", closePlayer);
+  pAgain.addEventListener("click", function () { openPlayer(P.key); });
+
+  document.addEventListener("keydown", function (e) {
+    if (!pl.classList.contains("open")) return;
+    if (e.key === "Escape") { e.preventDefault(); closePlayer(); return; }
+    if ((e.key === " " || e.key === "Spacebar") && P.steps && e.target.tagName !== "BUTTON") { e.preventDefault(); togglePause(); return; }
+    if (e.key === "Tab") {
+      var f = $$("button", pl).filter(function (b) { return b.offsetParent !== null; });
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ================= 20-20-20 таймер ================= */
+  var WORK = 20 * 60, BREAK = 20;
+  var DIAL_C = 2 * Math.PI * 90;
+  var dial = $("#dial"), dProg = $("#dProg"), dTime = $("#dTime"), dState = $("#dState"),
+      tGo = $("#tGo"), tNow = $("#tNow"), tCount = $("#tCount"), pill = $("#pill"), pillTxt = $("#pillTxt");
+  dProg.style.strokeDasharray = DIAL_C;
+  var T = { run: false, phase: "work", end: 0, iv: 0 };
+  var timerSeen = true;
+
+  function today() { var d = new Date(); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+  var cnt = load("kz_breaks", null);
+  if (!cnt || cnt.d !== today()) cnt = { d: today(), n: 0 };
+
+  function mmss(s) { var m = Math.floor(s / 60), r = s % 60; return m + ":" + (r < 10 ? "0" : "") + r; }
+  function leftSec() { return T.run ? Math.max(0, Math.ceil((T.end - Date.now()) / 1000)) : WORK; }
+
+  function setPhase(ph) {
+    T.phase = ph;
+    T.end = Date.now() + (ph === "break" ? BREAK : WORK) * 1000;
+    if (ph === "break") { chime(); document.title = "Узоққа қаранг! · " + BASE_TITLE; }
+    else { document.title = BASE_TITLE; }
+  }
+  function tTick() {
+    if (!T.run) return;
+    if (Date.now() >= T.end) {
+      if (T.phase === "work") { setPhase("break"); }
+      else {
+        if (cnt.d !== today()) cnt = { d: today(), n: 0 };
+        cnt.n++; save("kz_breaks", cnt);
+        cue(); setPhase("work");
+      }
+    }
+    tRender();
+  }
+  function tRender() {
+    var brk = T.run && T.phase === "break";
+    var total = brk ? BREAK : WORK, left = leftSec();
+    dTime.textContent = mmss(left);
+    dState.textContent = !T.run ? "Бошлаш тугмасини босинг" : (brk ? "Узоққа қаранг — 6 метрдан нарига" : "танаффусгача қолди");
+    dial.classList.toggle("brk", brk);
+    dProg.style.strokeDashoffset = T.run ? DIAL_C * (1 - left / total) : 0;
+    tGo.querySelector(".lbl").textContent = T.run ? "Тўхтатиш" : "Бошлаш";
+    tGo.classList.toggle("stop", T.run);
+    tCount.textContent = (cnt.d === today() && cnt.n) ? ("Бугун бажарилган танаффуслар: " + cnt.n) : "Бугун ҳали танаффус қилинмади";
+    updatePill();
+  }
+  function runLoop() { clearInterval(T.iv); T.iv = setInterval(tTick, 250); }
+  function tStart() { audio(); T.run = true; setPhase("work"); runLoop(); tRender(); }
+  function tStop() { T.run = false; clearInterval(T.iv); document.title = BASE_TITLE; tRender(); }
+
+  tGo.addEventListener("click", function () { if (T.run) tStop(); else tStart(); });
+  tNow.addEventListener("click", function () {
+    audio();
+    if (!T.run) { T.run = true; runLoop(); }
+    setPhase("break"); tRender();
+  });
+
+  function updatePill() {
+    var show = T.run && !timerSeen && !pl.classList.contains("open");
+    pill.classList.toggle("show", show);
+    pill.classList.toggle("brk", T.run && T.phase === "break");
+    pill.setAttribute("aria-hidden", show ? "false" : "true");
+    pill.tabIndex = show ? 0 : -1;
+    if (T.run) pillTxt.textContent = (T.phase === "break" ? "Узоққа қаранг · " : "Танаффусгача · ") + mmss(leftSec());
+  }
+  pill.addEventListener("click", function () {
+    var s = document.getElementById("taymer");
+    if (s) s.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) return;
+    tTick();
+    if (P.steps && pl.classList.contains("open")) wakeOn();
+  });
+
+  /* ================= Навигация ================= */
+  var navIn = $(".nav-in"), navLinks = $$(".nav a");
+  function setOn(a) {
+    navLinks.forEach(function (x) {
+      var on = x === a;
+      x.classList.toggle("on", on);
+      if (on) x.setAttribute("aria-current", "true"); else x.removeAttribute("aria-current");
+    });
+    if (!a) return;
+    var l = Math.max(0, a.offsetLeft - 16);
+    try { navIn.scrollTo({ left: l, behavior: "smooth" }); } catch (e) { navIn.scrollLeft = l; }
+  }
+
+  if ("IntersectionObserver" in window) {
+    var map = {};
+    navLinks.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting && map[e.target.id]) setOn(map[e.target.id]); });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    Object.keys(map).forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
+
+    new IntersectionObserver(function (es) {
+      timerSeen = es[0].isIntersecting; updatePill();
+    }, { threshold: 0.15 }).observe(document.getElementById("taymer"));
+  }
+
+  tRender();
 })();
 </script>
 </body>
 </html>
+
